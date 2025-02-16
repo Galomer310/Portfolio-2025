@@ -1,4 +1,7 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
 export default defineConfig({
-  base: "/", // Change this to match the deployment path
+  // your configuration options here
   plugins: [react()],
 });
