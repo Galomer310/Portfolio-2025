@@ -3,7 +3,7 @@ import StockTrackerImage from "../assets/StockTracker.png";
 import CurrencyConverter from "../assets/Currency-Converter.png";
 import StoryTelling from "../assets/StoryTelling.png";
 import NightOut from "../assets/food&drinkCalc.png";
-import TriviaGame from "../assets/TriviaGame.png";
+import TriviaGame from "../assets/triviaGame.png";
 import RobotScientist from "../assets/robotSci.png";
 import RecipeFinder from "../assets/recipe_finder.png";
 
