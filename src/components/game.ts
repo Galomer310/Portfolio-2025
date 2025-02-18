@@ -24,10 +24,10 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
   spaceshipImg.src = spaceshipImage;
 
   let spaceship = {
-    x: 100,
-    y: 100,
-    width: 60,
-    height: 40
+    x: 700,
+    y: 800,
+    width: 100,
+    height: 100
   };
 
   const skills = [
@@ -56,7 +56,7 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
 
   const cx = 800;
   const cy = 800;
-  const skillRadii = [120, 180, 200, 250, 300, 350, 444, 180, 270, 450, 333, 350, 290, 550];
+  const skillRadii = [250, 280, 340, 550, 450, 650, 640, 480, 470, 450, 633, 350, 790, 550];
 
   const skillPositions = skills.map((skill, index) => {
     const angle = (2 * Math.PI / skills.length) * index;
@@ -65,7 +65,7 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
       x: cx + radius * Math.cos(angle),
       y: cy + radius * Math.sin(angle),
       img: skill.img,
-      radius: 40,
+      radius: 50,
       text: skill.name
     };
   });
@@ -177,10 +177,10 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
       event.preventDefault();
     }
     switch(event.key) {
-      case 'ArrowUp': spaceship.y -= 5; break;
-      case 'ArrowDown': spaceship.y += 5; break;
-      case 'ArrowLeft': spaceship.x -= 5; break;
-      case 'ArrowRight': spaceship.x += 5; break;
+      case 'ArrowUp': spaceship.y -= 15; break;
+      case 'ArrowDown': spaceship.y += 15; break;
+      case 'ArrowLeft': spaceship.x -= 15; break;
+      case 'ArrowRight': spaceship.x += 15; break;
     }
   });
 }
