@@ -23,7 +23,7 @@ body {
   }
   
   nav a:hover {
-    text-decoration: underline;
+    color: #84286c;
   }
   
   /* Home Page */
