@@ -1,13 +1,22 @@
-import { Link } from "react-router-dom";
+import React from "react";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  toggleDarkMode: () => void;
+  darkMode: boolean;
+}
+
+const Header: React.FC<HeaderProps> = ({ toggleDarkMode, darkMode }) => {
   return (
     <header>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contact">Contact</Link>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#CV">C.V</a>
+        <button className="darkModeBtn" onClick={toggleDarkMode}>
+          {darkMode ? "Light Mode" : "Dark Mode"}
+        </button>
       </nav>
     </header>
   );

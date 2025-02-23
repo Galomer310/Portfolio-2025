@@ -24,8 +24,8 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
   spaceshipImg.src = spaceshipImage;
 
   let spaceship = {
-    x: 700,
-    y: 800,
+    x: 600,
+    y: 600,
     width: 100,
     height: 100
   };
@@ -54,9 +54,9 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
     })(),
   }));
 
-  const cx = 800;
-  const cy = 800;
-  const skillRadii = [250, 280, 340, 550, 450, 650, 640, 480, 470, 450, 633, 350, 790, 550];
+  const cx = 600;
+  const cy = 700;
+  const skillRadii = [400, 350, 500, 250, 300, 350, 400, 450, 500, 550, 600, 650, 600, 600];
 
   const skillPositions = skills.map((skill, index) => {
     const angle = (2 * Math.PI / skills.length) * index;
@@ -65,7 +65,7 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
       x: cx + radius * Math.cos(angle),
       y: cy + radius * Math.sin(angle),
       img: skill.img,
-      radius: 50,
+      radius: 30,
       text: skill.name
     };
   });
@@ -150,16 +150,16 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
       const dx = spaceship.x + spaceship.width / 2 - skill.x;
       const dy = spaceship.y + spaceship.height / 2 - skill.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
-
       if (distance < skill.radius + Math.min(spaceship.width, spaceship.height) / 2) {
-        setSkillText(skill.text); // Update the text via callback
+        setSkillDescription(skill.text);
         collisionDetected = true;
       }
     });
     if (!collisionDetected) {
-      setSkillText("Navigate the spaceship to explore skills!"); // Default text or empty
+      setSkillDescription("Navigate the spaceship to explore skills!");
     }
   }
+  
   function updateGameArea() {
     if (ctx) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -167,8 +167,8 @@ export const initGame = (setSkillDescription: React.Dispatch<React.SetStateActio
     drawSkills();
     drawSpaceship();
     checkSkillCollision();
-    drawSkillText();
   }
+  
 
   setInterval(updateGameArea, 20);
 

@@ -1,8 +1,19 @@
-const ResumeButton = () => {
+import React, { useState } from "react";
+import ResumeModal from "./ResumeModel";
+
+const ResumeButton: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
-    <a href="/resume.pdf" download className="resume-btn">
-      Download Resume
-    </a>
+    <>
+      <button className="resume-btn" onClick={openModal}>
+        View Resume
+      </button>
+      {isModalOpen && <ResumeModal onClose={closeModal} />}
+    </>
   );
 };
 
