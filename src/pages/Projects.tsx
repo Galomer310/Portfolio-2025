@@ -1,4 +1,6 @@
+// Projects.tsx
 import ProjectCard from "../components/ProjectCard";
+// Import project images.
 import StockTrackerImage from "../assets/StockTracker.png";
 import CurrencyConverter from "../assets/Currency-Converter.png";
 import StoryTelling from "../assets/StoryTelling.png";
@@ -7,6 +9,7 @@ import TriviaGame from "../assets/triviaGame.png";
 import RobotScientist from "../assets/robotSci.png";
 import RecipeFinder from "../assets/recipe_finder.png";
 
+// Define the Project interface.
 interface Project {
   name: string;
   image: string;
@@ -15,6 +18,7 @@ interface Project {
   live: string;
 }
 
+// Array of projects.
 const projects: Project[] = [
   {
     name: "StockTrack",
@@ -28,7 +32,7 @@ const projects: Project[] = [
     name: "Currency Converter",
     image: CurrencyConverter,
     description:
-      "A real-time exchange rates easily convert amounts between different currencies. .",
+      "A real-time exchange rates easily convert amounts between different currencies.",
     github: "https://github.com/Galomer310/Currency-Converter",
     live: "https://galomer310.github.io/Currency-Converter/",
   },
@@ -36,7 +40,7 @@ const projects: Project[] = [
     name: "StoryTelling",
     image: StoryTelling,
     description:
-      "web application that allows users to create, share, and read engaging stories.",
+      "Web application that allows users to create, share, and read engaging stories.",
     github: "https://github.com/Galomer310/StoryTelling-Frontend-React",
     live: "https://storytelling-frontend-react.onrender.com",
   },
@@ -52,7 +56,7 @@ const projects: Project[] = [
     name: "TriviaGame",
     image: TriviaGame,
     description:
-      "a fun and interactive web application where users can test their knowledge by answering trivia questions.",
+      "A fun and interactive web application where users can test their knowledge by answering trivia questions.",
     github: "https://github.com/Galomer310/Trivia-Game",
     live: "https://trivia-game-rvg3.onrender.com",
   },
@@ -60,7 +64,7 @@ const projects: Project[] = [
     name: "Robot-scientist",
     image: RobotScientist,
     description:
-      "This project is a simple React application that displays a list of famous scientists as robots. Users can search for a scientist by name using a search bar. The application dynamically filters and displays matching robots.",
+      "A simple React application that displays a list of famous scientists as robots. Users can search for a scientist by name. The application dynamically filters matching robots.",
     github: "https://github.com/Galomer310/Robot-scientist",
     live: "https://galomer310.github.io/Robot-scientist/",
   },
@@ -68,12 +72,13 @@ const projects: Project[] = [
     name: "Recipe Finder",
     image: RecipeFinder,
     description:
-      "Discover new recipes based on ingredients you have! Simply enter ingredients, select dietary preferences, and explore delicious meals. Save your favorite recipes and access them anytime.",
+      "Discover new recipes based on ingredients you have! Simply enter ingredients, select dietary preferences, and explore delicious meals.",
     github: "https://github.com/Galomer310/recipe_finder_frontend",
     live: "https://recipe-finder-frontend-wzop.onrender.com",
   },
 ];
 
+// Projects component renders a list of ProjectCard components.
 const Projects: React.FC = () => {
   return (
     <section className="projects">

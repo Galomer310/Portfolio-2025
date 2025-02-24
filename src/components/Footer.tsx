@@ -1,6 +1,7 @@
 import React from "react";
+// Import social icons from react-icons/fa.
 import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-
+// Footer component display social media links and copyright info.
 const Footer: React.FC = () => {
   return (
     <footer>
@@ -27,7 +28,7 @@ const Footer: React.FC = () => {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://x.com/Gal__omer"
+          href="https://twitter.com/galomer"
           target="_blank"
           rel="noopener noreferrer"
         >
