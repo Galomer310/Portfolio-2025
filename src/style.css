@@ -578,7 +578,6 @@ footer {
   line-height: 1.5;
   word-wrap: break-word;
 }
-
 /* Styles for screens wider than 768px */
 @media (min-width: 768px) {
   header nav a {

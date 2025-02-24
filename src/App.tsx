@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ResumeModal from "./components/ResumeModal"; // NEW import
-import "./public/style.css";
+import "./style.css";
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(false);
