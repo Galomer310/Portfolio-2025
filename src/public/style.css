@@ -634,3 +634,49 @@ footer {
     margin: 0 auto;
   }
 }
+
+
+
+/* Add these styles to portfolio/src/public/style.css */
+
+.resume-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.resume-modal-content {
+  position: relative;
+  max-width: 95%;
+  max-height: 95%;
+  width: auto;
+  height: auto;
+}
+
+.resume-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
