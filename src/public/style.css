@@ -640,7 +640,11 @@ footer {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 8px;
+  border-radius: 10px;
+}
+
+.resume-image:hover {
+  box-shadow: 0px 0px 50px  rgba(164, 181, 127, 0.78);
 }
 
 .close-button {
@@ -655,4 +659,8 @@ footer {
   width: 35px;
   height: 35px;
   cursor: pointer;
+}
+
+.close-button:hover {
+  background: darkred;
 }
