@@ -113,7 +113,7 @@ export const initGame = (
   const cx = 600;
   const cy = 700;
   // Array of radii used to position the skill icons around a circle.
-  const skillRadii = [400, 350, 500, 250, 300, 350, 400, 450, 500, 550, 600, 650, 600, 600];
+  const skillRadii = [400, 350, 500, 250, 300, 350, 400, 450, 500, 550, 500, 350, 300, 400];
 
   // Calculate positions for each skill icon using polar coordinates.
   const skillPositions = skills.map((skill, index) => {
@@ -123,7 +123,7 @@ export const initGame = (
       x: cx + radius * Math.cos(angle), // Calculate x position.
       y: cy + radius * Math.sin(angle), // Calculate y position.
       img: skill.img, // Image object.
-      radius: 30, // Display radius for drawing the image.
+      radius: 20, // Display radius for drawing the image.
       text: skill.name, // Skill description text.
     };
   });
