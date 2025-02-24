@@ -1,6 +1,6 @@
 # Portfolio Website
 
-This portfolio website showcases my skills, projects, and professional journey as a web developer. It includes interactive elements, such as a driving game on the "About" page that highlights my technical skills in a fun and engaging way.
+This portfolio website showcases my skills, projects, and professional journey as a web developer. It includes interactive elements, such as an alien hovering game on the "About" page that highlights my technical skills in a fun and engaging way.
 
 ## Features
 
@@ -33,5 +33,3 @@ The "About" page features an interactive game where users can drive a car over d
 - SQL
 
 
-# Portfolio-2025
-# Portfolio-2025
