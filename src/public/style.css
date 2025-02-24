@@ -51,7 +51,6 @@ header {
   padding: 30px;
   text-align: center;
   margin-bottom: 0%;
-  
 }
 
 /*
@@ -72,7 +71,6 @@ nav a:hover {
 }
 
 /* ----------------- Home Page ----------------- */
-
 /*
   .home container holds the home page content.
   It is positioned relative and takes the full viewport height.
@@ -113,7 +111,6 @@ nav a:hover {
 }
 
 /* ----------------- Parallax Background ----------------- */
-
 /*
   .parallax-bg container: fixed position so it remains in place as content scrolls.
   pointer-events: none allows clicks to pass through to the content.
@@ -208,8 +205,6 @@ nav a:hover {
   Main content of the home page that sits above the parallax background.
   Positioned relative with a higher z-index.
 */
-
-
 .home-content {
   position: relative;
   z-index: 1;
@@ -218,7 +213,6 @@ nav a:hover {
 }
 
 /* ----------------- About Page ----------------- */
-
 /*
   Styling for the about page container with a background image.
 */
@@ -284,7 +278,6 @@ nav a:hover {
 }
 
 /* ----------------- Canvas (Game) ----------------- */
-
 canvas#gameCanvas {
   width: 1100px;
   max-width: 1100px;
@@ -305,14 +298,10 @@ canvas#gameCanvas text {
 }
 
 canvas#gameCanvas:hover {
-
   border: 2px dashed #b5eb9a;
-
 }
 
-
 /* ----------------- Projects Page ----------------- */
-
 .projects {
   text-align: center;
   padding: 40px;
@@ -371,11 +360,7 @@ canvas#gameCanvas:hover {
   text-decoration: underline;
 }
 
-
-
-
 /* ----------------- Contact Page ----------------- */
-
 .contact {
   text-align: center;
   padding: 50px;
@@ -407,7 +392,6 @@ canvas#gameCanvas:hover {
 .contact form:hover {
   box-shadow: 2px 2px 25px rgba(164,181,127,0.5);
   /* color: rgba(164,181,127,0.5); */
-
 }
 
 .contact input, .contact textarea {
@@ -441,7 +425,6 @@ canvas#gameCanvas:hover {
 }
 
 /* ----------------- Footer ----------------- */
-
 footer {
   background: #222;
   color: white;
@@ -451,7 +434,6 @@ footer {
 }
 
 /* ----------------- Dark Mode Overrides ----------------- */
-
 /*
   Dark mode overall: sets a dark background and lighter text.
 */
@@ -560,7 +542,6 @@ footer {
 }
 
 /* ----------------- Social Icons ----------------- */
-
 .social-icons {
   margin-bottom: 10px;
 }
@@ -577,7 +558,6 @@ footer {
 }
 
 /* ----------------- Skills Container ----------------- */
-
 .skills-container {
   display: flex;
   justify-content: center;
@@ -615,7 +595,6 @@ footer {
     flex-direction: row;
     justify-content: space-around;
   }
-  
 }
 
 /* Styles for larger screens (e.g., desktops) */
@@ -635,10 +614,7 @@ footer {
   }
 }
 
-
-
-/* Add these styles to portfolio/src/public/style.css */
-
+/* ----------------- Modal Styles ----------------- */
 .resume-modal-overlay {
   position: fixed;
   top: 0;
