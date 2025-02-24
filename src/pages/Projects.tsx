@@ -57,8 +57,8 @@ const projects: Project[] = [
     image: TriviaGame,
     description:
       "A fun and interactive web application where users can test their knowledge by answering trivia questions.",
-    github: "https://github.com/Galomer310/Trivia-Game",
-    live: "https://trivia-game-rvg3.onrender.com",
+    github: "https://github.com/Galomer310/Trivia-Game-2025",
+    live: "https://trivia-game-2025.onrender.com",
   },
   {
     name: "Robot-scientist",
