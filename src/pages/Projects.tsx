@@ -21,7 +21,7 @@ interface Project {
 // Array of projects.
 const projects: Project[] = [
   {
-    name: "StockTrack",
+    name: "Stock Tracker",
     image: StockTrackerImage,
     description:
       "A web-based platform that allows users to track stock market, and manage their watchlist.",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     live: "https://galomer310.github.io/Currency-Converter/",
   },
   {
-    name: "StoryTelling",
+    name: "Story Telling",
     image: StoryTelling,
     description:
       "Web application that allows users to create, share, and read engaging stories.",
@@ -45,7 +45,7 @@ const projects: Project[] = [
     live: "https://storytelling-frontend-react.onrender.com",
   },
   {
-    name: "NightOut",
+    name: "Night Out",
     image: NightOut,
     description:
       "Calculator that helps you split and manage expenses for food, drinks, and tips.",
@@ -53,7 +53,7 @@ const projects: Project[] = [
     live: "https://galomer310.github.io/Night_Out2/",
   },
   {
-    name: "TriviaGame",
+    name: "Trivia Game",
     image: TriviaGame,
     description:
       "A fun and interactive web application where users can test their knowledge by answering trivia questions.",
