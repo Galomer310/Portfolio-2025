@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 // Import project images.
 import StockTrackerImage from "../assets/StockTracker.png";
 import CurrencyConverter from "../assets/Currency-Converter.png";
-import StoryTelling from "../assets/StoryTelling.png";
+import StorySharing from "../assets/StorySharing.png";
 import NightOut from "../assets/food&drinkCalc.png";
 import TriviaGame from "../assets/triviaGame.png";
 import RobotScientist from "../assets/robotSci.png";
@@ -37,12 +37,12 @@ const projects: Project[] = [
     live: "https://galomer310.github.io/Currency-Converter/",
   },
   {
-    name: "Story Telling",
-    image: StoryTelling,
+    name: "Story Sharing Platform",
+    image: StorySharing,
     description:
       "Web application that allows users to create, share, and read engaging stories.",
-    github: "https://github.com/Galomer310/StoryTelling-Frontend-React",
-    live: "https://storytelling-frontend-react.onrender.com",
+    github: "https://github.com/Galomer310/Story_Sharing",
+    live: "https://story-sharing-site.onrender.com",
   },
   {
     name: "Night Out",
