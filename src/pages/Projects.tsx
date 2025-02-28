@@ -81,12 +81,14 @@ const projects: Project[] = [
 // Projects component renders a list of ProjectCard components.
 const Projects: React.FC = () => {
   return (
-    <section className="projects">
-      <h2>My Projects</h2>
-      {projects.map((project) => (
-        <ProjectCard key={project.name} project={project} />
-      ))}
-    </section>
+    <>
+      <h2 className="pojectsHeader">My Projects</h2>
+      <section className="projects">
+        {projects.map((project) => (
+          <ProjectCard key={project.name} project={project} />
+        ))}
+      </section>
+    </>
   );
 };
 
