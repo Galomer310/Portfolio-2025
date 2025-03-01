@@ -28,7 +28,7 @@ main {
   Light mode uses a light background (#f5f5f5) and a specific text color.
 */
 body {
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
@@ -101,7 +101,7 @@ nav a:hover {
   margin-top: 20px;
   font-size: 30px;
   font-weight: 800;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   color: rgb(164, 181, 127);
 }
 .home h1:hover {
@@ -110,7 +110,7 @@ nav a:hover {
 
 .home p {
   font-size: 20px;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   font-weight: 800;
   color: rgb(164, 181, 127);
 }
@@ -144,7 +144,7 @@ nav a:hover {
 */
 .syntax {
   position: absolute;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   font-size: 3rem;
   transition: color 0.3s ease;
   color: rgba(0, 0, 0, 0.15); /* Default color in light mode */
@@ -237,7 +237,7 @@ nav a:hover {
 
 .about h1 {
   text-align: center;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   font-size: 2rem;
 }
 
@@ -264,7 +264,7 @@ nav a:hover {
   display: flex;
   justify-self: center;
   max-width: 70%;
-  font-family: cursive;
+  font-family: cursive, sans-serif;
   font-size: 1.5rem;
 }
 
