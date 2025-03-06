@@ -7,7 +7,7 @@ import StorySharing from "../assets/StorySharing.png";
 import NightOut from "../assets/food&drinkCalc.png";
 import TriviaGame from "../assets/triviaGame.png";
 import RobotScientist from "../assets/robotSci.png";
-import RecipeFinder from "../assets/recipe_finder.png";
+import RecipeFinder from "../assets/RecipeFinder.png";
 
 // Define the Project interface.
 interface Project {
