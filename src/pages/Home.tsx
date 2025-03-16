@@ -88,7 +88,8 @@ const Home: React.FC = () => {
       {/* Main home content displayed over the parallax background */}
       <div className="home-content">
         <h1>Hello, I'm Gal Omer</h1>
-        <p>Full Stack | Web Developer</p>
+        <p>Full Stack Developer</p>
+
         <div className="homePageImg"></div>
       </div>
     </div>

@@ -29,12 +29,12 @@ const projects: Project[] = [
     live: "https://stocktrack-frontend-u3br.onrender.com",
   },
   {
-    name: "Currency Converter",
-    image: CurrencyConverter,
+    name: "Recipe Finder",
+    image: RecipeFinder,
     description:
-      "A real-time exchange rates easily convert amounts between different currencies.",
-    github: "https://github.com/Galomer310/Currency-Converter",
-    live: "https://galomer310.github.io/Currency-Converter/",
+      "Discover new recipes based on ingredients you have! Simply enter ingredients, select dietary preferences, and explore delicious meals.",
+    github: "https://github.com/Galomer310/recipe_finder_frontend",
+    live: "https://recipe-finder-frontend-wzop.onrender.com",
   },
   {
     name: "Story Sharing Platform",
@@ -45,20 +45,20 @@ const projects: Project[] = [
     live: "https://story-sharing-site.onrender.com",
   },
   {
-    name: "Night Out",
-    image: NightOut,
-    description:
-      "Calculator that helps you split and manage expenses for food, drinks, and tips.",
-    github: "https://github.com/Galomer310/Night_Out2",
-    live: "https://galomer310.github.io/Night_Out2/",
-  },
-  {
     name: "Trivia Game",
     image: TriviaGame,
     description:
       "A fun and interactive web application where users can test their knowledge by answering trivia questions.",
     github: "https://github.com/Galomer310/Trivia-Game-2025",
     live: "https://trivia-game-2025.onrender.com",
+  },
+  {
+    name: "Night Out",
+    image: NightOut,
+    description:
+      "Calculator that helps you split and manage expenses for food, drinks, and tips.",
+    github: "https://github.com/Galomer310/Night_Out2",
+    live: "https://galomer310.github.io/Night_Out2/",
   },
   {
     name: "Robot-scientist",
@@ -69,12 +69,12 @@ const projects: Project[] = [
     live: "https://galomer310.github.io/Robot-scientist/",
   },
   {
-    name: "Recipe Finder",
-    image: RecipeFinder,
+    name: "Currency Converter",
+    image: CurrencyConverter,
     description:
-      "Discover new recipes based on ingredients you have! Simply enter ingredients, select dietary preferences, and explore delicious meals.",
-    github: "https://github.com/Galomer310/recipe_finder_frontend",
-    live: "https://recipe-finder-frontend-wzop.onrender.com",
+      "A real-time exchange rates easily convert amounts between different currencies.",
+    github: "https://github.com/Galomer310/Currency-Converter",
+    live: "https://galomer310.github.io/Currency-Converter/",
   },
 ];
 
