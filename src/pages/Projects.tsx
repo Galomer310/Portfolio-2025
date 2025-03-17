@@ -3,12 +3,16 @@ import ProjectCard from "../components/ProjectCard";
 import { FaTools } from "react-icons/fa";
 // Import project images.
 import StockTrackerImage from "../assets/StockTracker.png";
+import StockTrackerVideo from "../assets/StockTrack.mp4";
 import CurrencyConverter from "../assets/Currency-Converter.png";
 import StorySharing from "../assets/StorySharing.png";
+import StorySharingVideo from "../assets/StoryTelling.mp4";
 import NightOut from "../assets/food&drinkCalc.png";
 import TriviaGame from "../assets/triviaGame.png";
+import TriviaGameVideo from "../assets/TriviaGame.mp4";
 import RobotScientist from "../assets/robotSci.png";
 import RecipeFinder from "../assets/RecipeFinder.png";
+import RecipeFinderVideo from "../assets/RecipeFinder.mp4";
 
 // Define the Project interface.
 interface Project {
@@ -29,6 +33,7 @@ const projects: Project[] = [
       "A web-based platform that allows users to track stock market, and manage their watchlist.",
     github: "https://github.com/Galomer310/StockTrack-frontend",
     live: "https://stocktrack-frontend-u3br.onrender.com",
+    videoDemo: StockTrackerVideo,
   },
   {
     name: "Recipe Finder",
@@ -37,6 +42,7 @@ const projects: Project[] = [
       "Discover new recipes based on ingredients you have! Simply enter ingredients, select dietary preferences, and explore delicious meals.",
     github: "https://github.com/Galomer310/recipe_finder_frontend",
     live: "https://recipe-finder-frontend-wzop.onrender.com",
+    videoDemo: RecipeFinderVideo,
   },
   {
     name: "Story Sharing Platform",
@@ -45,6 +51,7 @@ const projects: Project[] = [
       "Web application that allows users to create, share, and read engaging stories.",
     github: "https://github.com/Galomer310/Story_Sharing",
     live: "https://story-sharing-site.onrender.com",
+    videoDemo: StorySharingVideo,
   },
   {
     name: "Trivia Game",
@@ -53,6 +60,7 @@ const projects: Project[] = [
       "A fun and interactive web application where users can test their knowledge by answering trivia questions.",
     github: "https://github.com/Galomer310/Trivia-Game-2025",
     live: "https://trivia-game-2025.onrender.com",
+    videoDemo: TriviaGameVideo,
   },
   {
     name: "Night Out",
