@@ -7,6 +7,7 @@ interface ProjectProps {
     description: string;
     github: string;
     live: string;
+    videoDemo?: string;
   };
 }
 
@@ -28,6 +29,12 @@ const ProjectCard: React.FC<ProjectProps> = ({ project }) => {
       <a href={project.live} target="_blank" rel="noopener noreferrer">
         Live Demo
       </a>
+      {/* LINK for video demonstration */}
+      {project.videoDemo && (
+        <a href={project.videoDemo} target="_blank" rel="noopener noreferrer">
+          Watch Video
+        </a>
+      )}
     </div>
   );
 };

@@ -1,5 +1,6 @@
 // Projects.tsx
 import ProjectCard from "../components/ProjectCard";
+import { FaTools } from "react-icons/fa";
 // Import project images.
 import StockTrackerImage from "../assets/StockTracker.png";
 import CurrencyConverter from "../assets/Currency-Converter.png";
@@ -16,6 +17,7 @@ interface Project {
   description: string;
   github: string;
   live: string;
+  videoDemo?: string; // Make optional or required, depending on the use case
 }
 
 // Array of projects.
@@ -87,6 +89,36 @@ const Projects: React.FC = () => {
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />
         ))}
+      </section>
+      {/* NEW SECTION: "Currently Working On" */}
+      <section className="currently-working-on">
+        <h2>
+          <FaTools style={{ marginRight: "10px" }} />
+          Currently Working On
+        </h2>
+        <p>
+          Here I can give a quick overview of some awesome side projects I’m
+          actively developing. For example...
+        </p>
+        <ul>
+          <li>
+            <strong>Ehud Fitness Platform</strong> is a web-based application
+            designed to help users achieve their fitness goals through
+            personalized workout plans and subscription options. The app
+            provides secure user authentication, email verification, and a
+            personalized dashboard where users can manage their subscription
+            plan.
+          </li>
+
+          <li>
+            <strong>Card Games Gambling Platform</strong> These days I am
+            working in collaboration with a senior developer on a card game
+            platform that will allow players from all over the world to enter a
+            room with other players and bet real money on a fun, interactive
+            casino-style card game.
+          </li>
+          {/* Add more items as needed */}
+        </ul>
       </section>
     </>
   );

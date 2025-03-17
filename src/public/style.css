@@ -663,7 +663,7 @@ footer {
 
 .close-button {
   position: absolute;
-  top: 10px;
+  top: 25px;
   right: 10px;
   background: red;
   color: white;
@@ -677,4 +677,64 @@ footer {
 
 .close-button:hover {
   background: darkred;
+}
+
+.download-button {
+  position: absolute;
+  top: 1px;
+  right: 60px;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+
+
+/* Currently working on  */
+.currently-working-on {
+  text-align: center;
+  padding: 50px;
+  margin-top: 50px;
+  background: #f9f9f9; /* or any color that fits */
+  border-top: 2px solid #ccc;
+}
+
+.currently-working-on h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.currently-working-on h2:hover {
+  color: #444;
+}
+.currently-working-on ul {
+  list-style-type: disc;
+  margin: 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+.currently-working-on li {
+  margin: 1rem;
+}
+.currently-working-on li:hover {
+  color: #444;
+}
+.currently-working-on p {
+  font-size: 1.5rem;
+  color: #444;
+
+}
+.currently-working-on p:hover {
+  color: #444;
 }
