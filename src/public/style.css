@@ -113,11 +113,17 @@ nav a:hover {
   font-family: cursive, sans-serif, Arial, monospace;
   font-weight: 800;
   color: rgb(164, 181, 127);
+  margin: 70px;
+  display: flex;
+  
+  justify-content: center;
 }
 
 .home p:hover {
   color: rgb(164, 181, 127);
 }
+
+
 
 /* ----------------- Parallax Background ----------------- */
 /*
