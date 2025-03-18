@@ -29,6 +29,7 @@ const projects: Project[] = [
       "A web-based platform that allows users to track stock market, and manage their watchlist.",
     github: "https://github.com/Galomer310/StockTrack-frontend",
     live: "https://stocktrack-frontend-u3br.onrender.com",
+    videoDemo: "https://www.youtube.com/watch?v=XTYVHmeUiLY&t=4s",
   },
   {
     name: "Recipe Finder",
@@ -37,6 +38,7 @@ const projects: Project[] = [
       "Discover new recipes based on ingredients you have! Simply enter ingredients, select dietary preferences, and explore delicious meals.",
     github: "https://github.com/Galomer310/recipe_finder_frontend",
     live: "https://recipe-finder-frontend-wzop.onrender.com",
+    videoDemo: "https://www.youtube.com/watch?v=iE7zy6EqTCw",
   },
   {
     name: "Story Sharing Platform",
@@ -45,6 +47,7 @@ const projects: Project[] = [
       "Web application that allows users to create, share, and read engaging stories.",
     github: "https://github.com/Galomer310/Story_Sharing",
     live: "https://story-sharing-site.onrender.com",
+    videoDemo: "https://www.youtube.com/watch?v=n3H7QsP6v_0",
   },
   {
     name: "Trivia Game",
@@ -53,6 +56,7 @@ const projects: Project[] = [
       "A fun and interactive web application where users can test their knowledge by answering trivia questions.",
     github: "https://github.com/Galomer310/Trivia-Game-2025",
     live: "https://trivia-game-2025.onrender.com",
+    videoDemo: "https://www.youtube.com/watch?v=0NOXBXu1zdI",
   },
   {
     name: "Night Out",

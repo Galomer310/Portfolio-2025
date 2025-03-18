@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import ResumeModal from "./components/ResumeModal"; // NEW import
+import ResumeModel from "./components/ResumeModel"; // NEW import
 import "./public/style.css";
 
 const App: React.FC = () => {
@@ -42,7 +42,7 @@ const App: React.FC = () => {
       <Footer />
 
       {/* Conditionally render the resume modal */}
-      {isResumeModalOpen && <ResumeModal onClose={closeResumeModal} />}
+      {isResumeModalOpen && <ResumeModel onClose={closeResumeModal} />}
     </div>
   );
 };
