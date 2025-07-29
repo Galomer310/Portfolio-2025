@@ -738,3 +738,147 @@ footer {
 .currently-working-on p:hover {
   color: #444;
 }
+
+
+
+/* ================================================================================================================================================ */
+/* Tech Showcase Section */
+.tech-showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 90%;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-section {
+  width: 40%;
+}
+
+.dropdown-section select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.showcase-details {
+  width: 55%;
+  text-align: left;
+}
+
+.showcase-details h2 {
+  font-size: 2rem;
+  color: #4d6988;
+}
+
+.showcase-details h3 {
+  color: #4d6988;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #4d6988;
+  font-weight: bold;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .tech-showcase {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dropdown-section,
+  .showcase-details {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+
+.carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel img {
+  width: 100%;
+  max-height: 220px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background: rgba(0, 0, 0, 0.4); */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 5px;
+  display: inline-block;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.dot.active {
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+.dot:hover {
+  opacity: 0.8;
+}
