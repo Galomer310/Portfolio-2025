@@ -342,7 +342,9 @@ const TechShowcase: React.FC = () => {
     <section className="tech-showcase">
       {/* Left side: Dropdown menu */}
       <div className="dropdown-section">
-        <h3>Select a Technology</h3>
+        <h3>
+          Select a technology to see how I’ve applied it in real projects.
+        </h3>
         <select value={currentItem.tech} onChange={handleChange}>
           {techShowcaseData.map((item, index) => (
             <option key={index} value={item.tech}>

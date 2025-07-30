@@ -56,13 +56,9 @@ header {
 /* ----------------------------------- project section --------------------------------------  */
 .pojectsHeader {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
-.pojectsHeader:hover {
-  font-size: 3rem;
-  color: rgb(164, 181, 127);
-  text-shadow: 2px 2px 10px rgba(164,181,127,0.5);
-}
+
 
 /* ----------------------------------- Header section --------------------------------------  */
 /*
@@ -193,8 +189,6 @@ nav a:hover {
 .syntax:nth-child(odd) {
   animation-duration: 9s;
 }
-
-
 .parallax-bg .syntax:nth-child(1)  { top: 15%;  left: 10%; }  /* React */
 .parallax-bg .syntax:nth-child(2)  { top: 12%;  right: 17%; } /* Redux */
 .parallax-bg .syntax:nth-child(3)  { top: 24%;  left: 18%; }  /* Node.js */
@@ -213,13 +207,6 @@ nav a:hover {
 .parallax-bg .syntax:nth-child(16) { top: 15%;  right: 30%; } /* Vite */
 .parallax-bg .syntax:nth-child(17) { top: 11%;  left: 18%; }  /* Socket.IO */
 .parallax-bg .syntax:nth-child(18) { top: 12%;  right: 45%; } /* Tailwind */
-
-
-.dark-mode .parallax-bg .syntax {
-  color: rgb(3, 243, 99); /* or any glow color */
-}
-
-
 
 
 /* 
@@ -266,7 +253,7 @@ nav a:hover {
   Hover effect for about page h1: scales up and changes color.
 */
 .about h1:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
   transition: 0.5s ease-in-out;
   color: #ccc;
 }
@@ -274,9 +261,10 @@ nav a:hover {
 /*
   Similar hover effects for h3 and paragraph elements on the about page.
 */
+
 .about h3:hover {
   transition: 0.5s ease-in-out;
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: #ccc;
 }
 
@@ -411,6 +399,11 @@ canvas#gameCanvas:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
+.dark-mode .contact form {
+  background: #333; /* Dark mode background */
+  color: #e0e0e0; /* Light text for dark mode */
+}
+
 .contact form:hover {
   box-shadow: 2px 2px 25px rgba(164,181,127,0.5);
   /* color: rgba(164,181,127,0.5); */
@@ -422,6 +415,12 @@ canvas#gameCanvas:hover {
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.dark-mode .contact input, .dark-mode .contact textarea {
+  background: #444; /* Dark mode input background */
+  color: #e0e0e0; /* Light text for dark mode */
+  border: 1px solid #666; /* Darker border for dark mode */
 }
 
 .contact button {
@@ -461,7 +460,7 @@ footer {
 */
 .dark-mode {
   margin-top: 0%;
-  background-color: #000000d1;
+  background-color: rgba(60, 60, 60, 0.7);
   color: #e0e0e0;
 }
 
@@ -707,16 +706,27 @@ footer {
   text-align: center;
   padding: 50px;
   margin-top: 50px;
-  background: #f9f9f9; /* or any color that fits */
+  height: 30vh;
+  background: #f9f9f9; 
   border-top: 2px solid #ccc;
+}
+
+.dark-mode .currently-working-on {
+  background: #5d5d5d; /* Dark mode background */
+  color: #e0e0e0; /* Light text for dark mode */
 }
 
 .currently-working-on h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  
 }
 .currently-working-on h2:hover {
   color: #444;
+}
+.dark-mode .currently-working-on h2:hover {
+    color: rgb(164, 181, 127); /* Light text for dark mode */
+
 }
 .currently-working-on ul {
   list-style-type: disc;
@@ -731,15 +741,23 @@ footer {
 .currently-working-on li:hover {
   color: #444;
 }
+.dark-mode .currently-working-on li:hover {
+  color: rgb(164, 181, 127); /* Light text for dark mode */
+}
+/* here --------------------------------------------------------------------------------------------------------------------------------------- */
 .currently-working-on p {
   font-size: 1.5rem;
-  color: #444;
+  color: rgb(74, 66, 66);
+  color: rgba(164,181,127);
+
 
 }
 .currently-working-on p:hover {
-  color: #444;
+  color: #000000;
 }
-
+.dark-mode .currently-working-on p{
+  color: #e0e0e0;
+}
 
 
 /* ================================================================================================================================================ */
@@ -754,6 +772,11 @@ footer {
   margin: 40px auto;
   max-width: 90%;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .tech-showcase {
+  background: #333; /* Dark mode background */
+  color: #e0e0e0; /* Light text for dark mode */
 }
 
 .dropdown-section {

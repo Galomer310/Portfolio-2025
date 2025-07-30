@@ -206,7 +206,10 @@ const projects: Project[] = [
 const Projects: React.FC = () => {
   return (
     <>
-      <h2 className="pojectsHeader">My Projects</h2>
+      <h2 className="pojectsHeader">
+        Here’s a selection of my recent work. Each project demonstrates my
+        ability to build responsive, secure, and scalable applications.
+      </h2>
       <section className="projects">
         {projects.map((project) => (
           <ProjectCard key={project.name} project={project} />

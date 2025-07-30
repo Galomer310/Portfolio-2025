@@ -9,13 +9,28 @@ const About: React.FC = () => {
   return (
     <section className="about">
       <h1>About Me</h1>
-      <h3>
+      {/* <h3>
         I'm a passionate web developer skilled in React, TypeScript, and backend
         technologies.
         <br />
         Currently, I'm looking for full stack, frontend, and backend
         opportunities!
         <br />
+      </h3> */}
+      <h3>
+        I’m a Full Stack Developer with hands-on experience.
+        <br />
+        Graduated from an intensive bootcamp, I’ve built real-world projects
+        like Recipe Finder, Stock Tracker, and a Food Sharing Platform.
+        <br />
+        also recently completed a 2-month internship at a startup, where I
+        contribute to developing automated web scrapers
+        <br />
+        using Python, Selenium, and BeautifulSoup, along with tools like
+        brightData for proxies, Docker, and AWS.
+        <br />
+        I’m passionate about creating scalable, user-friendly applications and
+        eager to join a team where I can make an impact.
       </h3>
 
       {/* Display profile picture */}

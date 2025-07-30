@@ -120,8 +120,8 @@ const Home: React.FC = () => {
 
       {/* Foreground content */}
       <div className="home-content">
-        <h1>Hello, I'm Gal Omer</h1>
-        <p>Full Stack Developer</p>
+        <h1>Hey, I'm Gal Omer</h1>
+
         <div className="homePageImg"></div>
       </div>
     </div>
