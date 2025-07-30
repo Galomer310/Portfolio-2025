@@ -93,7 +93,7 @@ nav a:hover {
   padding: 50px;
   margin-bottom: 0;
   position: relative;
-  height: 20vh;
+  height: 25vh;                         /* Full viewport height for the home section */
   overflow: hidden; /* Prevent background overflow */
 }
 
@@ -149,8 +149,6 @@ nav a:hover {
   It covers the entire viewport and is centered.
 */
 
-
-
 /*
   .syntax elements style: these represent code syntax snippets.
   They are absolutely positioned within the .parallax-bg container.
@@ -158,71 +156,70 @@ nav a:hover {
   (No default color is set here so that they can inherit or be overridden.)
 */
 .syntax {
-  position: absolute;
+  position: fixed;
   font-family: cursive, sans-serif, Arial, monospace;
   font-size: 3rem;
   transition: color 0.3s ease;
-  color: rgba(0, 0, 0, 0.15); /* Default color in light mode */
+  color: rgba(197, 169, 169, 0.15); /* Default color in light mode */
 }
 
-/*
-  Positioning each syntax element using nth-child selectors for even distribution.
-  Adjust these percentages as needed for your design.
-*/
-.parallax-bg .syntax:nth-child(1) {
-  top: 15%;
-  left: 27%;
+/* Floating & rotation animation for syntax icons */
+.syntax {
+  animation: floatRotate 12s ease-in-out infinite;
 }
 
-.parallax-bg .syntax:nth-child(2) {
-  top: 15%;
-  right: 10%;
+@keyframes floatRotate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-5deg);
+  }
+  75% {
+    transform: translateY(-6px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
 }
 
-.parallax-bg .syntax:nth-child(3) {
-  top: 30%;
-  left: 11%;
+/* Optional: vary speed per icon */
+.syntax:nth-child(even) {
+  animation-duration: 10s;
+}
+.syntax:nth-child(odd) {
+  animation-duration: 9s;
 }
 
-.parallax-bg .syntax:nth-child(4) {
-  top: 40%;
-  right: 20%;
+
+.parallax-bg .syntax:nth-child(1)  { top: 15%;  left: 10%; }  /* React */
+.parallax-bg .syntax:nth-child(2)  { top: 12%;  right: 17%; } /* Redux */
+.parallax-bg .syntax:nth-child(3)  { top: 24%;  left: 18%; }  /* Node.js */
+.parallax-bg .syntax:nth-child(4)  { top: 22%;  right: 25%; } /* PostgreSQL */
+.parallax-bg .syntax:nth-child(5)  { top: 16%;  left: 30%; }  /* TypeScript */
+.parallax-bg .syntax:nth-child(6)  { top: 32%;  right: 35%; } /* HTML */
+.parallax-bg .syntax:nth-child(7)  { top: 38%;  left: 15%; }  /* CSS */
+.parallax-bg .syntax:nth-child(8)  { top: 30%;  right: 45%; } /* GitHub */
+.parallax-bg .syntax:nth-child(9)  { top: 42%;  left: 50%; }  /* Git */
+.parallax-bg .syntax:nth-child(10) { top: 38%;  right: 10%; } /* Docker */
+.parallax-bg .syntax:nth-child(11) { top: 30%;  left: 42%; }  /* AWS */
+.parallax-bg .syntax:nth-child(12) { top: 18%;  right: 10%; } /* MongoDB */
+.parallax-bg .syntax:nth-child(13) { top: 23%;  left: 5%; }  /* Express */
+.parallax-bg .syntax:nth-child(14) { top: 28%;  right: 20%; } /* JWT */
+.parallax-bg .syntax:nth-child(15) { top: 32%;  left: 30%; }  /* Python */
+.parallax-bg .syntax:nth-child(16) { top: 15%;  right: 30%; } /* Vite */
+.parallax-bg .syntax:nth-child(17) { top: 11%;  left: 18%; }  /* Socket.IO */
+.parallax-bg .syntax:nth-child(18) { top: 12%;  right: 45%; } /* Tailwind */
+
+
+.dark-mode .parallax-bg .syntax {
+  color: rgb(3, 243, 99); /* or any glow color */
 }
 
-.parallax-bg .syntax:nth-child(5) {
-  top: 55%;
-  left: 30%;
-}
 
-.parallax-bg .syntax:nth-child(6) {
-  top: 65%;
-  right: 35%;
-}
-
-.parallax-bg .syntax:nth-child(7) {
-  top: 75%;
-  left: 15%;
-}
-
-.parallax-bg .syntax:nth-child(8) {
-  top: 80%;
-  right: 10%;
-}
-
-.parallax-bg .syntax:nth-child(9) {
-  top: 85%;
-  left: 40%;
-}
-
-.parallax-bg .syntax:nth-child(10) {
-  top: 20%;
-  left: 60%;
-}
-
-.parallax-bg .syntax:nth-child(11) {
-  top: 50%;
-  right: 35%;
-}
 
 
 /* 
@@ -235,6 +232,14 @@ nav a:hover {
   text-align: center;
   padding: 50px;
 }
+
+.syntax svg {
+  width: 3rem;
+  height: 3rem;
+  fill: currentColor; /* ensures SVG fills with inherited color */
+  color: inherit;     /* ensure they follow the parent color */
+}
+
 
 /* ----------------- About Page ----------------- */
 /*
@@ -303,7 +308,7 @@ nav a:hover {
 }
 
 /* ----------------- Canvas (Game) ----------------- */
-canvas#gameCanvas {
+/* canvas#gameCanvas {
   width: 1100px;
   max-width: 1100px;
   height: 700px;
@@ -324,7 +329,7 @@ canvas#gameCanvas text {
 
 canvas#gameCanvas:hover {
   border: 2px dashed #b5eb9a;
-}
+} */
 
 /* ----------------- Projects Page ----------------- */
 .projects {
@@ -550,13 +555,7 @@ footer {
   color: rgba(164,181,127,0.5);
 }
 
-/*
-  Dark mode override for the syntax elements in the parallax background.
-  This sets a lighter color (with increased opacity) for syntax when dark mode is active.
-*/
-.dark-mode .parallax-bg .syntax {
-  color: rgba(255, 255, 255, 0.3);
-}
+
 
 /* ----------------- Social Icons ----------------- */
 .social-icons {
@@ -835,7 +834,7 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  /* background: rgba(0, 0, 0, 0.4); */
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   border: none;
   padding: 10px;
@@ -966,3 +965,20 @@ footer {
   opacity: 1;
   background: #007bff;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
