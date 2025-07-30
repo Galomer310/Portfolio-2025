@@ -134,13 +134,51 @@ import ProjectCard from "../components/ProjectCard";
 import { FaTools } from "react-icons/fa";
 
 // Import project images
-import StockTrackerImage from "../assets/StockTracker.png";
 import CurrencyConverter from "../assets/Currency-Converter.png";
 import StorySharing from "../assets/StorySharing.png";
 import NightOut from "../assets/food&drinkCalc.png";
-import TriviaGame from "../assets/triviaGame.png";
 import RobotScientist from "../assets/robotSci.png";
+
+// Recipe Finder project screenshot
 import RecipeFinder from "../assets/RecipeFinder.png";
+import RecipeFinderImg1 from "../assets/RecipeFinder-1.png";
+import RecipeFinderImg2 from "../assets/RecipeFinder-2.png";
+import RecipeFinderImg3 from "../assets/RecipeFinder-3.png";
+import RecipeFinderImg4 from "../assets/RecipeFinder-4.png";
+import RecipeFinderImg5 from "../assets/RecipeFinder-5.png";
+import RecipeFinderImg6 from "../assets/RecipeFinder-6.png";
+import RecipeFinderImg7 from "../assets/RecipeFinder-7.png";
+import RecipeFinderImg8 from "../assets/RecipeFinder-8.png";
+import RecipeFinderImg9 from "../assets/RecipeFinder-9.png";
+import RecipeFinderImg10 from "../assets/RecipeFinder-10.png";
+import RecipeFinderImg11 from "../assets/RecipeFinder-11.png";
+import RecipeFinderImg12 from "../assets/RecipeFinder-12.png";
+
+// Stock Tracker project screenshots
+import StockTrackerImage from "../assets/StockTracker.png";
+import StockTrackerImg1 from "../assets/StockTracker-1.png";
+import StockTrackerImg2 from "../assets/StockTracker-2.png";
+import StockTrackerImg3 from "../assets/StockTracker-3.png";
+import StockTrackerImg4 from "../assets/StockTracker-4.png";
+import StockTrackerImg5 from "../assets/StockTracker-5.png";
+import StockTrackerImg6 from "../assets/StockTracker-6.png";
+import StockTrackerImg7 from "../assets/StockTracker-7.png";
+import StockTrackerImg8 from "../assets/StockTracker-8.png";
+import StockTrackerImg9 from "../assets/StockTracker-9.png";
+
+// Trivia Game project screenshots
+import TriviaGame from "../assets/triviaGame.png";
+import TriviaGameImg1 from "../assets/triviaGame-1.png";
+import TriviaGameImg2 from "../assets/triviaGame-2.png";
+import TriviaGameImg3 from "../assets/triviaGame-3.png";
+import TriviaGameImg4 from "../assets/triviaGame-4.png";
+import TriviaGameImg5 from "../assets/triviaGame-5.png";
+import TriviaGameImg6 from "../assets/triviaGame-6.png";
+import TriviaGameImg7 from "../assets/triviaGame-7.png";
+import TriviaGameImg8 from "../assets/triviaGame-8.png";
+import TriviaGameImg9 from "../assets/triviaGame-9.png";
+import TriviaGameImg10 from "../assets/triviaGame-10.png";
+import TriviaGameImg11 from "../assets/triviaGame-11.png";
 
 // Manisr project screenshots
 import ManisrImg1 from "../assets/manisr-1.png";
@@ -174,6 +212,17 @@ const projects: Project[] = [
   {
     name: "Stock Tracker",
     image: StockTrackerImage,
+    images: [
+      StockTrackerImg1,
+      StockTrackerImg2,
+      StockTrackerImg3,
+      StockTrackerImg4,
+      StockTrackerImg5,
+      StockTrackerImg6,
+      StockTrackerImg7,
+      StockTrackerImg8,
+      StockTrackerImg9,
+    ],
     description:
       "A web-based platform that allows users to track stock market and manage their watchlist.",
     github: "https://github.com/Galomer310/StockTrack-frontend",
@@ -183,6 +232,20 @@ const projects: Project[] = [
   {
     name: "Recipe Finder",
     image: RecipeFinder,
+    images: [
+      RecipeFinderImg1,
+      RecipeFinderImg2,
+      RecipeFinderImg3,
+      RecipeFinderImg4,
+      RecipeFinderImg5,
+      RecipeFinderImg6,
+      RecipeFinderImg7,
+      RecipeFinderImg8,
+      RecipeFinderImg9,
+      RecipeFinderImg10,
+      RecipeFinderImg11,
+      RecipeFinderImg12,
+    ],
     description:
       "Discover new recipes based on ingredients you have! Enter ingredients, set preferences, and explore delicious meals.",
     github: "https://github.com/Galomer310/recipe_finder_frontend",
@@ -198,15 +261,7 @@ const projects: Project[] = [
     live: "https://story-sharing-site.onrender.com",
     videoDemo: "https://www.youtube.com/watch?v=n3H7QsP6v_0",
   },
-  {
-    name: "Trivia Game",
-    image: TriviaGame,
-    description:
-      "A fun web app where users can test their knowledge by answering trivia questions from an API.",
-    github: "https://github.com/Galomer310/Trivia-Game-2025",
-    live: "https://trivia-game-2025.onrender.com",
-    videoDemo: "https://www.youtube.com/watch?v=0NOXBXu1zdI",
-  },
+
   {
     name: "Night Out",
     image: NightOut,
@@ -232,7 +287,30 @@ const projects: Project[] = [
     live: "https://galomer310.github.io/Currency-Converter/",
   },
   {
+    name: "Trivia Game",
+    image: TriviaGame,
+    images: [
+      TriviaGameImg1,
+      TriviaGameImg2,
+      TriviaGameImg3,
+      TriviaGameImg4,
+      TriviaGameImg5,
+      TriviaGameImg6,
+      TriviaGameImg7,
+      TriviaGameImg8,
+      TriviaGameImg9,
+      TriviaGameImg10,
+      TriviaGameImg11,
+    ],
+    description:
+      "A fun web app where users can test their knowledge by answering trivia questions from an API.",
+    github: "https://github.com/Galomer310/Trivia-Game-2025",
+    live: "https://trivia-game-2025.onrender.com",
+    videoDemo: "https://www.youtube.com/watch?v=0NOXBXu1zdI",
+  },
+  {
     name: "Manisr",
+    image: ManisrImg1, // Use the first image as the main image
     images: [
       ManisrImg1,
       ManisrImg2,

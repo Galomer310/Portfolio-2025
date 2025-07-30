@@ -32,7 +32,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  color: rgb(164, 181, 127);
+  color: rgb(164, 181, 127);   /* here you can control most of the page text color */
 }
 
 /* ----------------- Header Navigation ----------------- */
@@ -53,6 +53,7 @@ header {
   margin-bottom: 0%;
 }
 
+/* ----------------------------------- project section --------------------------------------  */
 .pojectsHeader {
   text-align: center;
   font-size: 3rem;
@@ -62,6 +63,8 @@ header {
   color: rgb(164, 181, 127);
   text-shadow: 2px 2px 10px rgba(164,181,127,0.5);
 }
+
+/* ----------------------------------- Header section --------------------------------------  */
 /*
   Navigation link styling: white text with margin spacing.
 */
@@ -79,7 +82,7 @@ nav a:hover {
   color: rgb(164, 181, 127);
 }
 
-/* ----------------- Home Page ----------------- */
+/* --------------------------------------- Home Page ----------------------------------------- */
 /*
   .home container holds the home page content.
   It is positioned relative and takes the full viewport height.
@@ -90,7 +93,7 @@ nav a:hover {
   padding: 50px;
   margin-bottom: 0;
   position: relative;
-  height: 100vh;
+  height: 20vh;
   overflow: hidden; /* Prevent background overflow */
 }
 
@@ -125,7 +128,7 @@ nav a:hover {
 
 
 
-/* ----------------- Parallax Background ----------------- */
+/* ---------------------------------------------------- Parallax Background ------------------------------------------------ */
 /*
   .parallax-bg container: fixed position so it remains in place as content scrolls.
   pointer-events: none allows clicks to pass through to the content.
@@ -141,6 +144,12 @@ nav a:hover {
   transform: translateY(0);
   transition: transform 0.1s ease-out;
 }
+/*
+  Background image for the parallax effect.
+  It covers the entire viewport and is centered.
+*/
+
+
 
 /*
   .syntax elements style: these represent code syntax snippets.
@@ -245,6 +254,7 @@ nav a:hover {
   text-align: center;
   font-family: cursive, sans-serif, Arial, monospace;
   font-size: 2rem;
+  padding-top: 40px;
 }
 
 /*
@@ -334,12 +344,6 @@ canvas#gameCanvas:hover {
   font-size: 2.5rem;
 }
 
-.projects h2:hover {
-  font-size: 2.5rem;
-  color: rgb(164, 181, 127);
-  text-shadow: 2px 2px 10px rgba(164,181,127,0.5);
-}
-
 .project-card {
   display: inline-block;
   background: white;
@@ -355,7 +359,7 @@ canvas#gameCanvas:hover {
   color: rgb(164, 181, 127);
   text-shadow: 2px 2px 10px rgba(164,181,127,0.4);
   box-shadow: 2px 5px 20px rgb(39, 46, 21);
-  transform: scale(1.1);
+  /* transform: scale(1.1); */                                                          /* Uncomment for scaling effect */
   transition: 0.25s ease-in-out;
 }
 
@@ -371,9 +375,7 @@ canvas#gameCanvas:hover {
   text-decoration: none;
 }
 
-.project-card a:hover {
-  text-decoration: underline;
-}
+
 
 /* ----------------- Contact Page ----------------- */
 .contact {
@@ -881,4 +883,86 @@ footer {
 
 .dot:hover {
   opacity: 0.8;
+}
+
+
+/* ----------------------------------- */
+                                                                                                      /* Modal Lightbox */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+}
+.modal-content {
+  position: relative;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-image {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 24px #000a;
+}
+.modal-close {
+  position: absolute;
+  top: 12px; right: 18px;
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 10;
+}
+.modal-close:hover { background: #700; }
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+.modal-arrow.left { left: 16px; }
+.modal-arrow.right { right: 16px; }
+.modal-arrow:hover { background: #333; }
+.modal-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+.modal-dots .dot {
+  height: 12px; width: 12px;
+  background: #fff; border-radius: 50%;
+  margin: 0 4px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.modal-dots .dot.active {
+  opacity: 1;
+  background: #007bff;
 }
