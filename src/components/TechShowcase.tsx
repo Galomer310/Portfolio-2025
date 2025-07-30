@@ -1,13 +1,329 @@
 import React, { useState, useEffect } from "react";
 
-// Data structure: Each item contains a technology, its usage, and a project example
+// const techShowcaseData = [
+//   {
+//     tech: "React",
+//     description:
+//       "A popular JavaScript library for building user interfaces, especially single-page applications.",
+//     usage:
+//       "Built dynamic, responsive frontends for Stock Tracker, Recipe Finder, and Manisr.",
+//     project: {
+//       name: "Stock Tracker",
+//       live: "https://stocktrack-frontend-u3br.onrender.com",
+//       github: "https://github.com/Galomer310/StockTrack-frontend",
+//     },
+//   },
+//   {
+//     tech: "Redux",
+//     description:
+//       "A predictable state container for JavaScript apps, often used with React.",
+//     usage:
+//       "Implemented global state management for Recipe Finder and Stock Tracker.",
+//     project: {
+//       name: "Recipe Finder",
+//       live: "https://recipe-finder-frontend-wzop.onrender.com",
+//       github: "https://github.com/Galomer310/recipe_finder_frontend",
+//     },
+//   },
+//   {
+//     tech: "HTML5",
+//     description:
+//       "The standard markup language for creating web pages and applications.",
+//     usage:
+//       "Structured web pages across all projects including portfolio and interactive UI components.",
+//     project: {
+//       name: "Portfolio Website",
+//       live: "https://portfolio-2025-m45j.onrender.com",
+//       github: "https://github.com/Galomer310",
+//     },
+//   },
+//   {
+//     tech: "CSS3",
+//     description:
+//       "A stylesheet language for describing the presentation of HTML documents.",
+//     usage:
+//       "Styled responsive layouts and dark mode functionality across portfolio and projects.",
+//     project: {
+//       name: "Portfolio Website",
+//       live: "https://portfolio-2025-m45j.onrender.com",
+//       github: "https://github.com/Galomer310",
+//     },
+//   },
+//   {
+//     tech: "Puppeteer",
+//     description:
+//       "A Node.js library that provides a high-level API to control Chrome or Chromium browsers.",
+//     usage:
+//       "Used in TLV Tech scrapers for automating data extraction from dynamic pages.",
+//     project: {
+//       name: "Colton Data Pipeline",
+//       live: "Private Repo",
+//       github: "https://github.com/TLVTech/Colton",
+//     },
+//   },
+//   {
+//     tech: "Selenium",
+//     description:
+//       "An open-source tool for automating browsers, commonly used for testing and scraping.",
+//     usage:
+//       "Automated vehicle data scraping in TLV Tech project using Python + Selenium.",
+//     project: {
+//       name: "Colton Data Pipeline",
+//       live: "Private Repo",
+//       github: "https://github.com/TLVTech/Colton",
+//     },
+//   },
+//   {
+//     tech: "Chromium & ChromeDriver",
+//     description:
+//       "Chromium is an open-source browser, and ChromeDriver allows automation for Chrome browsers.",
+//     usage:
+//       "Integrated with Selenium to control Chrome-based browsers in scraping pipeline.",
+//     project: {
+//       name: "Colton Data Pipeline",
+//       live: "Private Repo",
+//       github: "https://github.com/TLVTech/Colton",
+//     },
+//   },
+//   {
+//     tech: "Playwright",
+//     description:
+//       "A Node.js library for browser automation supporting multiple browsers.",
+//     usage:
+//       "Explored for bypassing CAPTCHA and scraping JS-heavy sites in TLV Tech project.",
+//     project: {
+//       name: "Colton Data Pipeline",
+//       live: "Private Repo",
+//       github: "https://github.com/TLVTech/Colton",
+//     },
+//   },
+//   {
+//     tech: "Bright Data Proxies & Web Unlocker",
+//     description:
+//       "Residential proxies and an advanced anti-bot solution for web scraping.",
+//     usage:
+//       "Implemented to bypass IP restrictions and captchas when scraping protected websites.",
+//     project: {
+//       name: "Colton Data Pipeline",
+//       live: "Private Repo",
+//       github: "https://github.com/TLVTech/Colton",
+//     },
+//   },
+//   {
+//     tech: "Socket.IO",
+//     description:
+//       "A library for real-time, bidirectional communication between web clients and servers.",
+//     usage:
+//       "Integrated into multiplayer poker game project for live updates between players.",
+//     project: {
+//       name: "Poker Game",
+//       live: "https://github.com/Galomer310/poker",
+//       github: "https://github.com/Galomer310/poker",
+//     },
+//   },
+//   {
+//     tech: "AWS",
+//     description:
+//       "Amazon Web Services – a cloud platform providing hosting, compute, and storage solutions.",
+//     usage:
+//       "Deployed scrapers using AWS ECS and managed outputs in S3 buckets for TLV Tech.",
+//     project: {
+//       name: "Colton Data Pipeline",
+//       live: "Private Repo",
+//       github: "https://github.com/TLVTech/Colton",
+//     },
+//   },
+//   {
+//     tech: "React",
+//     description: "A JavaScript library for building dynamic user interfaces.",
+//     usage:
+//       "Used in Stock Tracker, Recipe Finder, Story Sharing, and Trivia Game for creating responsive UIs.",
+//     project: {
+//       name: "Stock Tracker",
+//       live: "https://stocktrack-frontend-u3br.onrender.com",
+//       github: "https://github.com/Galomer310/StockTrack-frontend",
+//     },
+//   },
+//   {
+//     tech: "Redux Toolkit",
+//     description:
+//       "A library for managing and centralizing application state in React apps.",
+//     usage:
+//       "Implemented in Recipe Finder and Story Sharing to manage global state efficiently.",
+//     project: {
+//       name: "Recipe Finder",
+//       live: "https://recipe-finder-frontend-wzop.onrender.com",
+//       github: "https://github.com/Galomer310/recipe_finder_frontend",
+//     },
+//   },
+//   {
+//     tech: "TypeScript",
+//     description:
+//       "A strongly typed programming language that builds on JavaScript.",
+//     usage:
+//       "Applied across all major projects for type safety in both frontend and backend code.",
+//     project: {
+//       name: "Story Sharing Platform",
+//       live: "https://story-sharing-site.onrender.com",
+//       github: "https://github.com/Galomer310/Story_Sharing",
+//     },
+//   },
+//   {
+//     tech: "Node.js",
+//     description:
+//       "A JavaScript runtime built on Chrome's V8 engine for server-side programming.",
+//     usage:
+//       "Developed backend APIs for Stock Tracker, Story Sharing, and Trivia Game.",
+//     project: {
+//       name: "Stock Tracker Backend",
+//       live: "Private",
+//       github: "https://github.com/Galomer310/StockTrack-backend",
+//     },
+//   },
+//   {
+//     tech: "Express.js",
+//     description:
+//       "A minimal and flexible Node.js framework for building web APIs.",
+//     usage: "Created RESTful APIs for Stock Tracker and Trivia Game backends.",
+//     project: {
+//       name: "Trivia Game",
+//       live: "https://trivia-game-2025.onrender.com",
+//       github: "https://github.com/Galomer310/Trivia-Game-2025",
+//     },
+//   },
+//   {
+//     tech: "PostgreSQL",
+//     description: "A powerful open-source relational database system.",
+//     usage:
+//       "Implemented for user management and data storage in Stock Tracker, Story Sharing, and Trivia Game.",
+//     project: {
+//       name: "Stock Tracker",
+//       live: "https://stocktrack-frontend-u3br.onrender.com",
+//       github: "https://github.com/Galomer310/StockTrack-frontend",
+//     },
+//   },
+//   {
+//     tech: "NeonDB",
+//     description:
+//       "A managed PostgreSQL service optimized for modern cloud applications.",
+//     usage:
+//       "Used to host Stock Tracker’s relational database for scalability and reliability.",
+//     project: {
+//       name: "Stock Tracker",
+//       live: "https://stocktrack-frontend-u3br.onrender.com",
+//       github: "https://github.com/Galomer310/StockTrack-frontend",
+//     },
+//   },
+//   {
+//     tech: "JWT",
+//     description:
+//       "JSON Web Tokens are used for secure user authentication and authorization.",
+//     usage:
+//       "Implemented user authentication in Stock Tracker and Story Sharing Platform.",
+//     project: {
+//       name: "Story Sharing Platform",
+//       live: "https://story-sharing-site.onrender.com",
+//       github: "https://github.com/Galomer310/Story_Sharing",
+//     },
+//   },
+//   {
+//     tech: "bcrypt",
+//     description: "A password-hashing library used for secure password storage.",
+//     usage:
+//       "Used in backend for hashing passwords in Story Sharing and Stock Tracker.",
+//     project: {
+//       name: "Story Sharing Platform",
+//       live: "https://story-sharing-site.onrender.com",
+//       github: "https://github.com/Galomer310/Story_Sharing",
+//     },
+//   },
+//   {
+//     tech: "Axios",
+//     description:
+//       "A promise-based HTTP client for making API requests from the browser or Node.js.",
+//     usage:
+//       "Used for fetching data from external APIs like Open Trivia Database and Exchange Rate API.",
+//     project: {
+//       name: "Trivia Game",
+//       live: "https://trivia-game-2025.onrender.com",
+//       github: "https://github.com/Galomer310/Trivia-Game-2025",
+//     },
+//   },
+//   {
+//     tech: "dotenv",
+//     description:
+//       "Loads environment variables from a .env file into Node.js process.env.",
+//     usage:
+//       "Secured API keys and database credentials in Trivia Game and Stock Tracker backend.",
+//     project: {
+//       name: "Trivia Game",
+//       live: "https://trivia-game-2025.onrender.com",
+//       github: "https://github.com/Galomer310/Trivia-Game-2025",
+//     },
+//   },
+//   {
+//     tech: "cors",
+//     description:
+//       "A Node.js package that provides a Connect/Express middleware for enabling CORS.",
+//     usage: "Enabled cross-origin requests in Trivia Game backend.",
+//     project: {
+//       name: "Trivia Game",
+//       live: "https://trivia-game-2025.onrender.com",
+//       github: "https://github.com/Galomer310/Trivia-Game-2025",
+//     },
+//   },
+//   {
+//     tech: "React Router",
+//     description: "A standard library for routing in React applications.",
+//     usage:
+//       "Implemented client-side routing for Recipe Finder and Story Sharing frontend.",
+//     project: {
+//       name: "Recipe Finder",
+//       live: "https://recipe-finder-frontend-wzop.onrender.com",
+//       github: "https://github.com/Galomer310/recipe_finder_frontend",
+//     },
+//   },
+//   {
+//     tech: "Exchange Rate API",
+//     description: "A REST API that provides real-time currency exchange rates.",
+//     usage:
+//       "Integrated to fetch and display real-time currency conversions in Currency Converter app.",
+//     project: {
+//       name: "Currency Converter",
+//       live: "https://galomer310.github.io/Currency-Converter/",
+//       github: "https://github.com/Galomer310/Currency-Converter",
+//     },
+//   },
+//   {
+//     tech: "Open Trivia Database",
+//     description: "A free-to-use API for trivia questions.",
+//     usage: "Used to provide questions for Trivia Game.",
+//     project: {
+//       name: "Trivia Game",
+//       live: "https://trivia-game-2025.onrender.com",
+//       github: "https://github.com/Galomer310/Trivia-Game-2025",
+//     },
+//   },
+//   {
+//     tech: "Polygon.io API",
+//     description:
+//       "A market data API for real-time stock prices and financial information.",
+//     usage: "Used to fetch real-time stock prices for Stock Tracker app.",
+//     project: {
+//       name: "Stock Tracker",
+//       live: "https://stocktrack-frontend-u3br.onrender.com",
+//       github: "https://github.com/Galomer310/StockTrack-frontend",
+//     },
+//   },
+// ];
+
 const techShowcaseData = [
   {
     tech: "React",
     description:
-      "A popular JavaScript library for building user interfaces, especially single-page applications.",
+      "A leading JavaScript library for building dynamic and component-based user interfaces.",
     usage:
-      "Built dynamic, responsive frontends for Stock Tracker, Recipe Finder, and Manisr.",
+      "Developed responsive UIs for multiple projects including Stock Tracker, Recipe Finder, and Manisr. Implemented reusable components, hooks (useState, useEffect), and optimized rendering for performance.",
     project: {
       name: "Stock Tracker",
       live: "https://stocktrack-frontend-u3br.onrender.com",
@@ -17,9 +333,9 @@ const techShowcaseData = [
   {
     tech: "Redux",
     description:
-      "A predictable state container for JavaScript apps, often used with React.",
+      "A predictable state container commonly used for managing global state in React apps.",
     usage:
-      "Implemented global state management for Recipe Finder and Stock Tracker.",
+      "Integrated Redux and Redux Toolkit to manage global state across complex applications like Recipe Finder and Stock Tracker, enabling consistent data flow and easy debugging.",
     project: {
       name: "Recipe Finder",
       live: "https://recipe-finder-frontend-wzop.onrender.com",
@@ -29,9 +345,9 @@ const techShowcaseData = [
   {
     tech: "HTML5",
     description:
-      "The standard markup language for creating web pages and applications.",
+      "The foundation for structuring content on the web, supporting semantic elements and modern APIs.",
     usage:
-      "Structured web pages across all projects including portfolio and interactive UI components.",
+      "Built semantic, accessible web pages across portfolio and projects, ensuring SEO-friendly structure and compatibility with responsive CSS layouts.",
     project: {
       name: "Portfolio Website",
       live: "https://portfolio-2025-m45j.onrender.com",
@@ -41,9 +357,9 @@ const techShowcaseData = [
   {
     tech: "CSS3",
     description:
-      "A stylesheet language for describing the presentation of HTML documents.",
+      "A styling language for creating visually appealing and responsive user interfaces.",
     usage:
-      "Styled responsive layouts and dark mode functionality across portfolio and projects.",
+      "Implemented advanced CSS features including Flexbox, Grid, animations, and dark mode. Designed visually consistent layouts for portfolio and client projects.",
     project: {
       name: "Portfolio Website",
       live: "https://portfolio-2025-m45j.onrender.com",
@@ -51,118 +367,11 @@ const techShowcaseData = [
     },
   },
   {
-    tech: "Puppeteer",
-    description:
-      "A Node.js library that provides a high-level API to control Chrome or Chromium browsers.",
-    usage:
-      "Used in TLV Tech scrapers for automating data extraction from dynamic pages.",
-    project: {
-      name: "Colton Data Pipeline",
-      live: "Private Repo",
-      github: "https://github.com/TLVTech/Colton",
-    },
-  },
-  {
-    tech: "Selenium",
-    description:
-      "An open-source tool for automating browsers, commonly used for testing and scraping.",
-    usage:
-      "Automated vehicle data scraping in TLV Tech project using Python + Selenium.",
-    project: {
-      name: "Colton Data Pipeline",
-      live: "Private Repo",
-      github: "https://github.com/TLVTech/Colton",
-    },
-  },
-  {
-    tech: "Chromium & ChromeDriver",
-    description:
-      "Chromium is an open-source browser, and ChromeDriver allows automation for Chrome browsers.",
-    usage:
-      "Integrated with Selenium to control Chrome-based browsers in scraping pipeline.",
-    project: {
-      name: "Colton Data Pipeline",
-      live: "Private Repo",
-      github: "https://github.com/TLVTech/Colton",
-    },
-  },
-  {
-    tech: "Playwright",
-    description:
-      "A Node.js library for browser automation supporting multiple browsers.",
-    usage:
-      "Explored for bypassing CAPTCHA and scraping JS-heavy sites in TLV Tech project.",
-    project: {
-      name: "Colton Data Pipeline",
-      live: "Private Repo",
-      github: "https://github.com/TLVTech/Colton",
-    },
-  },
-  {
-    tech: "Bright Data Proxies & Web Unlocker",
-    description:
-      "Residential proxies and an advanced anti-bot solution for web scraping.",
-    usage:
-      "Implemented to bypass IP restrictions and captchas when scraping protected websites.",
-    project: {
-      name: "Colton Data Pipeline",
-      live: "Private Repo",
-      github: "https://github.com/TLVTech/Colton",
-    },
-  },
-  {
-    tech: "Socket.IO",
-    description:
-      "A library for real-time, bidirectional communication between web clients and servers.",
-    usage:
-      "Integrated into multiplayer poker game project for live updates between players.",
-    project: {
-      name: "Poker Game",
-      live: "https://github.com/Galomer310/poker",
-      github: "https://github.com/Galomer310/poker",
-    },
-  },
-  {
-    tech: "AWS",
-    description:
-      "Amazon Web Services – a cloud platform providing hosting, compute, and storage solutions.",
-    usage:
-      "Deployed scrapers using AWS ECS and managed outputs in S3 buckets for TLV Tech.",
-    project: {
-      name: "Colton Data Pipeline",
-      live: "Private Repo",
-      github: "https://github.com/TLVTech/Colton",
-    },
-  },
-  {
-    tech: "React",
-    description: "A JavaScript library for building dynamic user interfaces.",
-    usage:
-      "Used in Stock Tracker, Recipe Finder, Story Sharing, and Trivia Game for creating responsive UIs.",
-    project: {
-      name: "Stock Tracker",
-      live: "https://stocktrack-frontend-u3br.onrender.com",
-      github: "https://github.com/Galomer310/StockTrack-frontend",
-    },
-  },
-  {
-    tech: "Redux Toolkit",
-    description:
-      "A library for managing and centralizing application state in React apps.",
-    usage:
-      "Implemented in Recipe Finder and Story Sharing to manage global state efficiently.",
-    project: {
-      name: "Recipe Finder",
-      live: "https://recipe-finder-frontend-wzop.onrender.com",
-      github: "https://github.com/Galomer310/recipe_finder_frontend",
-    },
-  },
-  {
     tech: "TypeScript",
     description:
-      "A strongly typed programming language that builds on JavaScript.",
+      "A superset of JavaScript that introduces strong typing for scalable application development.",
     usage:
-      "Applied across all major projects for type safety in both frontend and backend code.",
+      "Applied TypeScript in both frontend and backend projects like Stock Tracker and Story Sharing. Enhanced type safety, reduced bugs, and improved developer productivity.",
     project: {
       name: "Story Sharing Platform",
       live: "https://story-sharing-site.onrender.com",
@@ -172,9 +381,9 @@ const techShowcaseData = [
   {
     tech: "Node.js",
     description:
-      "A JavaScript runtime built on Chrome's V8 engine for server-side programming.",
+      "A JavaScript runtime that allows building fast and scalable server-side applications.",
     usage:
-      "Developed backend APIs for Stock Tracker, Story Sharing, and Trivia Game.",
+      "Developed RESTful APIs for Stock Tracker, Story Sharing, and Trivia Game using Node.js and Express.js. Implemented JWT authentication and optimized API endpoints for performance.",
     project: {
       name: "Stock Tracker Backend",
       live: "Private",
@@ -184,8 +393,9 @@ const techShowcaseData = [
   {
     tech: "Express.js",
     description:
-      "A minimal and flexible Node.js framework for building web APIs.",
-    usage: "Created RESTful APIs for Stock Tracker and Trivia Game backends.",
+      "A minimal and flexible Node.js framework for building APIs and web servers.",
+    usage:
+      "Built secure and modular backend services for Trivia Game and Recipe Finder. Used Express middleware for validation, error handling, and CORS configuration.",
     project: {
       name: "Trivia Game",
       live: "https://trivia-game-2025.onrender.com",
@@ -194,9 +404,10 @@ const techShowcaseData = [
   },
   {
     tech: "PostgreSQL",
-    description: "A powerful open-source relational database system.",
+    description:
+      "A powerful, open-source relational database for handling structured data.",
     usage:
-      "Implemented for user management and data storage in Stock Tracker, Story Sharing, and Trivia Game.",
+      "Designed normalized database schemas for Stock Tracker and Story Sharing. Implemented optimized queries and relationships for user accounts, watchlists, and content.",
     project: {
       name: "Stock Tracker",
       live: "https://stocktrack-frontend-u3br.onrender.com",
@@ -205,10 +416,9 @@ const techShowcaseData = [
   },
   {
     tech: "NeonDB",
-    description:
-      "A managed PostgreSQL service optimized for modern cloud applications.",
+    description: "A managed PostgreSQL service for modern cloud applications.",
     usage:
-      "Used to host Stock Tracker’s relational database for scalability and reliability.",
+      "Configured NeonDB for hosting Stock Tracker’s production database, ensuring high availability, connection pooling, and query performance.",
     project: {
       name: "Stock Tracker",
       live: "https://stocktrack-frontend-u3br.onrender.com",
@@ -218,9 +428,9 @@ const techShowcaseData = [
   {
     tech: "JWT",
     description:
-      "JSON Web Tokens are used for secure user authentication and authorization.",
+      "JSON Web Tokens for stateless user authentication and secure API access.",
     usage:
-      "Implemented user authentication in Stock Tracker and Story Sharing Platform.",
+      "Implemented JWT-based authentication flow in Stock Tracker and Story Sharing apps, including token generation, validation, and middleware for route protection.",
     project: {
       name: "Story Sharing Platform",
       live: "https://story-sharing-site.onrender.com",
@@ -229,9 +439,9 @@ const techShowcaseData = [
   },
   {
     tech: "bcrypt",
-    description: "A password-hashing library used for secure password storage.",
+    description: "A library for hashing passwords securely in Node.js apps.",
     usage:
-      "Used in backend for hashing passwords in Story Sharing and Stock Tracker.",
+      "Integrated bcrypt for password hashing and comparison in backend authentication logic for Stock Tracker and Story Sharing.",
     project: {
       name: "Story Sharing Platform",
       live: "https://story-sharing-site.onrender.com",
@@ -241,32 +451,9 @@ const techShowcaseData = [
   {
     tech: "Axios",
     description:
-      "A promise-based HTTP client for making API requests from the browser or Node.js.",
+      "A promise-based HTTP client for making API requests in JavaScript and Node.js.",
     usage:
-      "Used for fetching data from external APIs like Open Trivia Database and Exchange Rate API.",
-    project: {
-      name: "Trivia Game",
-      live: "https://trivia-game-2025.onrender.com",
-      github: "https://github.com/Galomer310/Trivia-Game-2025",
-    },
-  },
-  {
-    tech: "dotenv",
-    description:
-      "Loads environment variables from a .env file into Node.js process.env.",
-    usage:
-      "Secured API keys and database credentials in Trivia Game and Stock Tracker backend.",
-    project: {
-      name: "Trivia Game",
-      live: "https://trivia-game-2025.onrender.com",
-      github: "https://github.com/Galomer310/Trivia-Game-2025",
-    },
-  },
-  {
-    tech: "cors",
-    description:
-      "A Node.js package that provides a Connect/Express middleware for enabling CORS.",
-    usage: "Enabled cross-origin requests in Trivia Game backend.",
+      "Fetched real-time data from APIs like Polygon.io for stock prices and Open Trivia Database for quiz content in Trivia Game.",
     project: {
       name: "Trivia Game",
       live: "https://trivia-game-2025.onrender.com",
@@ -275,9 +462,10 @@ const techShowcaseData = [
   },
   {
     tech: "React Router",
-    description: "A standard library for routing in React applications.",
+    description:
+      "A standard routing library for single-page React applications.",
     usage:
-      "Implemented client-side routing for Recipe Finder and Story Sharing frontend.",
+      "Implemented client-side routing for Recipe Finder and Story Sharing, enabling dynamic navigation without full page reload.",
     project: {
       name: "Recipe Finder",
       live: "https://recipe-finder-frontend-wzop.onrender.com",
@@ -285,20 +473,94 @@ const techShowcaseData = [
     },
   },
   {
-    tech: "Exchange Rate API",
-    description: "A REST API that provides real-time currency exchange rates.",
+    tech: "Socket.IO",
+    description:
+      "A real-time communication library for web apps using WebSockets.",
     usage:
-      "Integrated to fetch and display real-time currency conversions in Currency Converter app.",
+      "Built real-time multiplayer experience for Poker Game, allowing synchronized actions and instant updates across connected users.",
     project: {
-      name: "Currency Converter",
-      live: "https://galomer310.github.io/Currency-Converter/",
-      github: "https://github.com/Galomer310/Currency-Converter",
+      name: "Poker Game",
+      live: "https://github.com/Galomer310/poker",
+      github: "https://github.com/Galomer310/poker",
+    },
+  },
+  {
+    tech: "AWS",
+    description:
+      "Amazon Web Services providing compute, storage, and deployment solutions.",
+    usage:
+      "Configured AWS ECS for running web scraping tasks and used S3 for storing processed data and images securely.",
+    project: {
+      name: "Colton Data Pipeline",
+      live: "Private Repo",
+      github: "https://github.com/TLVTech/Colton",
+    },
+  },
+  {
+    tech: "Puppeteer",
+    description:
+      "A headless Chrome automation library for scraping and testing web apps.",
+    usage:
+      "Used Puppeteer to scrape dynamic content for TLV Tech’s Colton project, handling pagination and JavaScript-rendered data.",
+    project: {
+      name: "Colton Data Pipeline",
+      live: "Private Repo",
+      github: "https://github.com/TLVTech/Colton",
+    },
+  },
+  {
+    tech: "Selenium",
+    description:
+      "An automation framework for testing and data scraping in real browsers.",
+    usage:
+      "Automated Chrome sessions for scraping inventory data, managed sessions, and implemented error recovery strategies.",
+    project: {
+      name: "Colton Data Pipeline",
+      live: "Private Repo",
+      github: "https://github.com/TLVTech/Colton",
+    },
+  },
+  {
+    tech: "Playwright",
+    description:
+      "A modern automation framework supporting Chromium, Firefox, and WebKit.",
+    usage:
+      "Explored Playwright for bypassing CAPTCHAs and scraping JavaScript-heavy sites during TLV Tech pipeline development.",
+    project: {
+      name: "Colton Data Pipeline",
+      live: "Private Repo",
+      github: "https://github.com/TLVTech/Colton",
+    },
+  },
+  {
+    tech: "Bright Data",
+    description: "Enterprise-grade residential proxies and anti-bot solutions.",
+    usage:
+      "Integrated Bright Data Web Unlocker to bypass IP blocks and bot detection for large-scale scraping of dealer websites.",
+    project: {
+      name: "Colton Data Pipeline",
+      live: "Private Repo",
+      github: "https://github.com/TLVTech/Colton",
+    },
+  },
+  {
+    tech: "Polygon.io API",
+    description:
+      "A financial data API delivering real-time and historical stock prices.",
+    usage:
+      "Integrated Polygon API in Stock Tracker to display live stock updates and historical performance charts.",
+    project: {
+      name: "Stock Tracker",
+      live: "https://stocktrack-frontend-u3br.onrender.com",
+      github: "https://github.com/Galomer310/StockTrack-frontend",
     },
   },
   {
     tech: "Open Trivia Database",
-    description: "A free-to-use API for trivia questions.",
-    usage: "Used to provide questions for Trivia Game.",
+    description:
+      "An open API for generating trivia questions for quizzes and games.",
+    usage:
+      "Fetched trivia questions for the interactive Trivia Game project, handling difficulty levels and categories.",
     project: {
       name: "Trivia Game",
       live: "https://trivia-game-2025.onrender.com",
@@ -306,14 +568,15 @@ const techShowcaseData = [
     },
   },
   {
-    tech: "Polygon.io API",
+    tech: "Exchange Rate API",
     description:
-      "A market data API for real-time stock prices and financial information.",
-    usage: "Used to fetch real-time stock prices for Stock Tracker app.",
+      "A currency exchange API providing real-time conversion rates.",
+    usage:
+      "Integrated API into Currency Converter app to calculate and display up-to-date currency conversions.",
     project: {
-      name: "Stock Tracker",
-      live: "https://stocktrack-frontend-u3br.onrender.com",
-      github: "https://github.com/Galomer310/StockTrack-frontend",
+      name: "Currency Converter",
+      live: "https://galomer310.github.io/Currency-Converter/",
+      github: "https://github.com/Galomer310/Currency-Converter",
     },
   },
 ];
@@ -321,18 +584,15 @@ const techShowcaseData = [
 const TechShowcase: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Automatically cycle through tech items every 5 seconds
+  // Auto-scroll every 8 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % techShowcaseData.length);
-    }, 10000);
+    }, 15000);
     return () => clearInterval(interval);
   }, []);
 
-  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    const index = techShowcaseData.findIndex(
-      (item) => item.tech === e.target.value
-    );
+  const handleClick = (index: number) => {
     setCurrentIndex(index);
   };
 
@@ -340,34 +600,40 @@ const TechShowcase: React.FC = () => {
 
   return (
     <section className="tech-showcase">
-      {/* Left side: Dropdown menu */}
-      <div className="dropdown-section">
-        <h3>
-          Select a technology to see how I’ve applied it in real projects.
-        </h3>
-        <select value={currentItem.tech} onChange={handleChange}>
+      {/* Left: Scrollable Window showing 6 items */}
+      <div className="tech-scroll-window">
+        <div
+          className="tech-list-scroll"
+          style={{
+            transform: `translateY(-${currentIndex * 60}px)`, // Each item = 60px tall
+          }}
+        >
           {techShowcaseData.map((item, index) => (
-            <option key={index} value={item.tech}>
+            <div
+              key={index}
+              className={`tech-item ${currentIndex === index ? "active" : ""}`}
+              onClick={() => handleClick(index)}
+            >
               {item.tech}
-            </option>
+            </div>
           ))}
-        </select>
+        </div>
       </div>
 
-      {/* Right side: Dynamic showcase */}
+      {/* Right: Details */}
       <div className="showcase-details">
-        {/* <h2>{currentItem.tech}</h2> */}
-        <h2>{currentItem.description}</h2>
-        <h3>{currentItem.usage}</h3>
+        <h2>{currentItem.tech}</h2>
+        <p className="description">{currentItem.description}</p>
+        <p className="usage">{currentItem.usage}</p>
         <div className="project-links">
-          <strong>Project:</strong> {currentItem.project.name} <br />
+          <strong>- Example Project:</strong> {currentItem.project.name} <br />
           {currentItem.project.live !== "Private Repo" && (
             <a
               href={currentItem.project.live}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Live Demo
+              - Live Demo
             </a>
           )}
           {" | "}
