@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
           <FaGithub size={24} />
         </a>
         <a
-          href="https://twitter.com/galomer"
+          href="https://x.com/Gal__omer"
           target="_blank"
           rel="noopener noreferrer"
         >
