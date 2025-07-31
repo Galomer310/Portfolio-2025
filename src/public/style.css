@@ -29,7 +29,8 @@ main {
 */
 /* Global font settings */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', Arial, 'Helvetica Neue', sans-serif;
+
   color: rgb(164, 181, 127);
   margin: 0;
   padding: 0;
@@ -37,11 +38,11 @@ body {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
+h1, h2, h3, h4, h5, p {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Roboto', Arial, 'Helvetica Neue', sans-serif;
   font-weight: 700;
 }
-
 
 
 /* ----------------- Header Navigation ----------------- */
