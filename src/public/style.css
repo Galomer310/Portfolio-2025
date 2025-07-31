@@ -118,7 +118,7 @@ nav a:hover {
   justify-content: center;
 }
 
-/* ---------------------------------------------------- Parallax Background ------------------------------------------------ */
+/* ------------------------------------------ Parallax Background ------------------------------------------------------ */
 /*
   .parallax-bg container: fixed position so it remains in place as content scrolls.
   pointer-events: none allows clicks to pass through to the content.
@@ -222,7 +222,7 @@ nav a:hover {
 }
 
 
-/* ----------------- About Page ----------------- */
+/* ------------------------------------------------------------- About Page -------------------------------------------- */
 /*
   Styling for the about page container with a background image.
 */
@@ -274,7 +274,7 @@ nav a:hover {
 .about p:hover {
   transition: 0.5s ease-in-out;
   transform: scale(1.2);
-  color: #ccc;
+
 }
 
 /*
@@ -289,7 +289,7 @@ nav a:hover {
   border: 3px solid #444;
 }
 
-/* ----------------- Projects Page ----------------- */
+/* ----------------------------------------------------- Projects Page ---------------------------------------------- */
 .projects {
   text-align: center;
   padding: 40px;
@@ -322,7 +322,6 @@ nav a:hover {
   color: rgb(164, 181, 127);
   text-shadow: 2px 2px 10px rgba(164,181,127,0.4);
   box-shadow: 2px 5px 20px rgb(39, 46, 21);
-  /* transform: scale(1.1); */                                                          /* Uncomment for scaling effect */
   transition: 0.25s ease-in-out;
 }
 
@@ -340,7 +339,7 @@ nav a:hover {
 
 
 
-/* ----------------- Contact Page ----------------- */
+/* -------------------------------------------------------- Contact Page ----------------------------------------------- */
 .contact {
   text-align: center;
   padding: 50px;
@@ -415,7 +414,7 @@ nav a:hover {
   font-size: 1.5rem;
 }
 
-/* ----------------- Footer ----------------- */
+/* ----------------------------------------------------- Footer ------------------------------------------------------- */
 footer {
   background: #222;
   color: white;
@@ -424,7 +423,7 @@ footer {
   width: 100%;
 }
 
-/* ----------------- Dark Mode Overrides ----------------- */
+/* -------------------------------------------------- Dark Mode Overrides --------------------------------------------- */
 /*
   Dark mode overall: sets a dark background and lighter text.
 */
@@ -615,8 +614,7 @@ footer {
 }
 
 
-
-/*////////////////// Currently working on  ///////////////////*/
+/* ================================================================== Currently working on ====================================================== */
 .currently-working-on {
   text-align: center;
   padding: 50px;
@@ -663,7 +661,7 @@ footer {
 .dark-mode .currently-working-on li:hover {
   color: rgb(164, 181, 127); /* Light text for dark mode */
 }
-/* here --------------------------------------------------------------------------------------------------------------------------------------- */
+
 .currently-working-on p {
   font-size: 1.5rem;
   color: rgb(74, 66, 66);
@@ -675,19 +673,20 @@ footer {
 .dark-mode .currently-working-on p{
   color: #e0e0e0;
 }
+/* ================================================================== Currently working on ====================================================== */
 
 
-/* ================================================================================================================================================ */
-/* Tech Showcase Section */
+/* ================================================================== Tech Showcase Section ===================================================== */
+/* main container */
 .tech-showcase {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px;
-  background: #f9f9f9;
+  padding: 1rem;
+  /* background: #f9f9f9; */
   border-radius: 10px;
-  margin: 40px auto;
-  max-width: 90%;
+  margin: 4rem auto;
+  max-width: 90vw;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -700,24 +699,9 @@ footer {
   width: 40%;
 }
 
-.dropdown-section select {
-  width: 100%;
-  padding: 10px;
-  font-size: 1.2rem;
-  margin-top: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.showcase-details {
-  width: 55%;
-  text-align: left;
-}
-
 .showcase-details h2 {
   font-size: 2rem;
   color: rgba(164,181,127);
-
 }
 
 .showcase-details h3 {
@@ -726,150 +710,12 @@ footer {
   margin-top: 10px;
 }
 
-.project-links {
-  margin-top: 15px;
-  color: #4d6988;
-}
-
-.project-links a {
-  text-decoration: none;
-  color: #4d6988;
-  font-weight: bold;
-}
-
-.project-links a:hover {
-  text-decoration: underline;
-}
-
-
-/*----------------------------------------------------------- Modal Lightbox ----------------------------------------------------*/
-.modal-overlay {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0,0,0,0.8);
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border-radius: 50px;
-}
-.modal-content {
-  position: relative;
-  background: transparent;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90vw;
-  max-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.modal-image {
-  max-width: 90vw;
-  max-height: 80vh;
-  border-radius: 10px;
-  margin: 20px 0;
-  box-shadow: 0 0 24px #000a;
-}
-.modal-close {
-  position: absolute;
-  top: 12px; right: 18px;
-  background: #222;
-  color: #fff;
-  font-size: 2rem;
-  border: none;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-  z-index: 10;
-}
-.modal-close:hover { background: #700; }
-.modal-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0,0,0,0.6);
-  color: #fff;
-  border: none;
-  font-size: 2rem;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  z-index: 10;
-}
-.modal-arrow.left { left: 16px; }
-.modal-arrow.right { right: 16px; }
-.modal-arrow:hover { background: #333; }
-.modal-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 12px;
-}
-.modal-dots .dot {
-  height: 12px; width: 12px;
-  background: #fff; border-radius: 50%;
-  margin: 0 4px;
-  opacity: 0.4;
-  cursor: pointer;
-}
-.modal-dots .dot.active {
-  opacity: 1;
-  background: #007bff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.tech-showcase {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  background: #f9f9f9;
-  padding: 40px;
-  border-radius: 12px;
-  max-width: 90%;
-  margin: 50px auto;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
-  min-height: 450px;
-}
-
 /* Left side: Scrolling container */
 .tech-scroll-window {
-  width: 35%;
-  height: 360px; /* 6 items * 60px each */
+  width: 30%;
+  height: 22rem; /* 6 items * 60px each */
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 15px;
   border: 1px solid #ccc;
   background: #f0f0f0;
   position: relative;
@@ -880,21 +726,21 @@ footer {
 }
 
 .tech-item {
-  height: 60px;
+  height: 4rem;
   display: flex;
   align-items: center;
-  padding-left: 16px;
+  padding-left: 2rem;
   font-weight: bold;
   color: #333;
   background: #eaeaea;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   cursor: pointer;
 }
 
 .tech-item:hover {
-  background: #ddd;
+  background: #cfcfcf;
 }
-
+/* the selected teach item  */
 .tech-item.active {
   background: #a4b57f; /* Highlight selected */
   color: white;
@@ -912,36 +758,162 @@ footer {
 }
 
 /* Right side: details */
-.showcase-details {
+/* .showcase-details {
   width: 60%;
-}
+} */
 
 .showcase-details h2 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
-
+/* ========================= show case description ====================== */
 .showcase-details .description {
   font-size: 1.5rem;
   margin: 3rem;
   text-align:left;
   color: #4d6988;
+  color: rgb(153, 176, 103);
 }
-
+.description:hover {
+  color: #333;
+  color: rgb(153, 176, 103);
+}
+/* ======================== show case usage ====================== */
 .showcase-details .usage {
   font-size: 1.5rem;
   margin-bottom: 3rem;
   text-align: left;
-  color: #333;
+  color: #ffffff;
+  background-color:  rgba(153, 176, 103, 0.6);
+  padding: 1rem;
+  border-radius: 10px; 
 }
 
+.project-links {
+  margin-top: 15px;
+  color: #ffffff;
+}
+
+
+
 .project-links a {
-  color: #4d6988;
-  font-weight: bold;
+  color: #ffffff;
   margin-right: 10px;
   text-decoration: none;
 }
 
 .project-links a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  
 }
+
+/* ================================================================== Tech Showcase Section ===================================================== */
+
+
+/* ================================================================== projects multi image carosel ============================================== */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 0 24px #000a;
+}
+
+.modal-close {
+  position: absolute;
+  top: 12px; right: 18px;
+  background: #222;
+  color: #fff;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-close:hover { background: #700; }
+
+.modal-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.modal-arrow.left { left: 16px; }
+
+.modal-arrow.right { right: 16px; }
+
+.modal-arrow:hover { background: #333; }
+
+.modal-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.modal-dots .dot {
+  height: 12px; width: 12px;
+  background: #fff; border-radius: 50%;
+  margin: 0 4px;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.modal-dots .dot.active {
+  opacity: 1;
+  background: #007bff;
+}
+
+/* ==============================projects multi image carosel================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
