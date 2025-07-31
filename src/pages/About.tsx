@@ -1,22 +1,12 @@
-// About.tsx
 import React from "react";
 // Import a profile picture
 import ProfilePicture from "../assets/portfolioPic.png";
 // Import the new TechShowcase component
 import TechShowcase from "../components/TechShowcase";
-
 const About: React.FC = () => {
   return (
     <section className="about">
       <h1>About Me</h1>
-      {/* <h3>
-        I'm a passionate web developer skilled in React, TypeScript, and backend
-        technologies.
-        <br />
-        Currently, I'm looking for full stack, frontend, and backend
-        opportunities!
-        <br />
-      </h3> */}
       <h3>
         I’m a Full Stack Developer with hands-on experience.
         <br />
