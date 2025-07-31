@@ -894,6 +894,133 @@ footer {
 
 
 
+/* ===================================== RESPONSIVE DESIGN ===================================== */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  header {
+    padding: 20px;
+  }
+  nav a {
+    margin: 0 15px;
+    font-size: 16px;
+  }
+  .about {
+    height: auto;
+    padding: 30px 15px;
+  }
+  .about p {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .projects {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  .project-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .tech-showcase {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .tech-scroll-window {
+    width: 90%;
+    height: 14rem; /* Reduce height for smaller screens */
+    margin-bottom: 20px;
+  }
+  .showcase-details {
+    width: 100%;
+  }
+  .showcase-details .description,
+  .showcase-details .usage {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+  }
+}
+
+/* For mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+  }
+  .home {
+    padding: 20px;
+    height: auto;
+  }
+  .home h1 {
+    font-size: 24px;
+  }
+  .home p {
+    font-size: 16px;
+    margin: 20px;
+  }
+  .about img {
+    width: 120px;
+    height: 120px;
+  }
+  .projects {
+    padding: 20px;
+  }
+  .contact {
+    padding: 20px;
+  }
+  .contact form {
+    width: 90%;
+    padding: 20px;
+  }
+  .tech-showcase {
+    margin: 2rem auto;
+  }
+  .tech-item {
+    height: 3rem;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+  }
+}
+
+/* For very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+  nav a {
+    font-size: 14px;
+  }
+  .home h1 {
+    font-size: 20px;
+  }
+  .home p {
+    font-size: 14px;
+  }
+  .about p {
+    font-size: 1rem;
+  }
+  .showcase-details .description,
+  .showcase-details .usage {
+    font-size: 1rem;
+  }
+  .project-card {
+    width: 95%;
+  }
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .social-icons a {
+    margin: 0 5px;
+  }
+}
 
 
 
