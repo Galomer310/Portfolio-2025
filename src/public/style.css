@@ -27,13 +27,22 @@ main {
   Base body styling: setting the font, margins, padding, background, and text color.
   Light mode uses a light background (#f5f5f5) and a specific text color.
 */
+/* Global font settings */
 body {
-  font-family: cursive;
+  font-family: 'Inter', sans-serif;
+  color: rgb(164, 181, 127);
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
-  color: rgb(164, 181, 127);   /* here you can control most of the page text color */
 }
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+
 
 /* ----------------- Header Navigation ----------------- */
 
@@ -100,7 +109,7 @@ nav a:hover {
   margin-top: 20px;
   font-size: 30px;
   font-weight: 800;
-  font-family: cursive;
+  /* font-family: cursive; */
   color: rgb(164, 181, 127);
 }
 .home h1:hover {
@@ -109,7 +118,7 @@ nav a:hover {
 
 .home p {
   font-size: 20px;
-  font-family: cursive;
+  /* font-family: cursive; */
   font-weight: 800;
   color: rgb(164, 181, 127);
   margin: 70px;
@@ -147,7 +156,7 @@ nav a:hover {
 */
 .syntax {
   position: fixed;
-  font-family: cursive;
+  /* font-family: cursive; */
   font-size: 3rem;
   transition: color 0.3s ease;
   color: rgba(197, 169, 169, 0.15); /* Default color in light mode */
@@ -238,7 +247,7 @@ nav a:hover {
 
 .about h1 {
   text-align: center;
-  font-family: cursive;
+  /* font-family: cursive; */
   font-size: 2rem;
   padding-top: 40px;
 }
@@ -267,7 +276,7 @@ nav a:hover {
   display: flex;
   justify-self: center;
   max-width: 70%;
-  font-family: cursive;
+  /* font-family: cursive; */
   font-size: 1.5rem;
 }
 
@@ -1045,17 +1054,3 @@ footer {
 
 
 
-/* Global font settings */
-body {
-  font-family: 'Inter', sans-serif;
-  color: rgb(164, 181, 127);
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
-}
-
-/* Headings */
-h1, h2, h3, h4, h5 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-}
