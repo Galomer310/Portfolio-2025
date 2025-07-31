@@ -945,42 +945,42 @@ footer {
 /* For mobile (max-width: 768px) */
 @media (max-width: 768px) {
   header {
-    padding: 10px;
+    display: none; /* Hide header on mobile */
   }
-  nav {
+  /* nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  nav a {
+  } */
+  /* nav a {
     display: block;
     margin: 8px 0;
     font-size: 16px;
-  }
-  .home {
+  } */
+  /* .home {
     padding: 20px;
     height: auto;
-  }
+  } */
   .home h1 {
-    font-size: 24px;
+    font-size: 2rem;
   }
-  .home p {
+  /* .home p {
     font-size: 16px;
     margin: 20px;
-  }
+  } */
   .about img {
     width: 120px;
     height: 120px;
   }
   .projects {
-    padding: 20px;
+    margin: 1rem;
   }
   .contact {
-    padding: 20px;
+    margin: 1rem;
   }
   .contact form {
     width: 90%;
-    padding: 20px;
+    margin: 1rem;
   }
   .tech-showcase {
     margin: 2rem auto;
@@ -1044,3 +1044,18 @@ footer {
 
 
 
+
+/* Global font settings */
+body {
+  font-family: 'Inter', sans-serif;
+  color: rgb(164, 181, 127);
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
