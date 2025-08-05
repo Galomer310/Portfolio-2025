@@ -322,6 +322,18 @@ const techShowcaseData = [
       github: "https://github.com/Galomer310",
     },
   },
+  {
+    tech: "Spoonacular API",
+    description:
+      "A comprehensive food and recipe API providing access to thousands of recipes, nutritional data, and meal planning resources.",
+    usage:
+      "Integrated Spoonacular API in the Recipe Finder project to allow ingredient-based recipe searches and dietary filters. Implemented dynamic API calls using Axios and displayed real-time results with pagination and responsive UI.",
+    project: {
+      name: "Recipe Finder",
+      live: "https://recipe-finder-frontend-wzop.onrender.com",
+      github: "https://github.com/Galomer310/recipe_finder_frontend",
+    },
+  },
 ];
 
 const TechShowcase: React.FC = () => {
