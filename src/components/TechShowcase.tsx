@@ -262,6 +262,66 @@ const techShowcaseData = [
       github: "https://github.com/Galomer310/Currency-Converter",
     },
   },
+  {
+    tech: "Docker",
+    description:
+      "A platform for developing, shipping, and running applications inside lightweight containers.",
+    usage:
+      "Containerized full-stack applications and scraping services for consistent development environments and smooth deployments. Utilized Docker Compose for orchestrating multi-service setups, ensuring portability and scalability.",
+    project: {
+      name: "Colton Data Pipeline",
+      live: "Private Repo",
+      github: "https://github.com/TLVTech/Colton",
+    },
+  },
+  {
+    tech: "EmailJS",
+    description:
+      "A service that allows sending emails directly from client-side applications without requiring a backend.",
+    usage:
+      "Integrated EmailJS in the Contact form of my portfolio to send messages securely via client-side JavaScript. Implemented template-based emails and form validation to ensure a smooth user experience without exposing sensitive credentials.",
+    project: {
+      name: "Portfolio Website",
+      live: "https://portfolio-2025-m45j.onrender.com",
+      github: "https://github.com/Galomer310",
+    },
+  },
+  {
+    tech: "Vite",
+    description:
+      "A next-generation frontend build tool that offers fast development and optimized builds.",
+    usage:
+      "Used Vite for setting up modern React applications such as Recipe Finder and Stock Tracker. Achieved lightning-fast hot module replacement (HMR) and efficient production builds for smooth development workflow.",
+    project: {
+      name: "Recipe Finder",
+      live: "https://recipe-finder-frontend-wzop.onrender.com",
+      github: "https://github.com/Galomer310/recipe_finder_frontend",
+    },
+  },
+  {
+    tech: "Git",
+    description:
+      "A distributed version control system for tracking changes in source code.",
+    usage:
+      "Utilized Git for source control across all projects. Managed branches, resolved merge conflicts, and maintained clean commit history following Git workflow best practices.",
+    project: {
+      name: "Portfolio & Full Stack Apps",
+      live: "https://portfolio-2025-m45j.onrender.com",
+      github: "https://github.com/Galomer310",
+    },
+  },
+  {
+    tech: "GitHub",
+    description:
+      "A cloud-based platform for hosting Git repositories with collaborative features.",
+    usage:
+      "Hosted and version-controlled all personal and collaborative projects on GitHub. Leveraged GitHub Actions for CI/CD pipelines and maintained organized repositories with clear README documentation.",
+    project: {
+      name: "Portfolio & Full Stack Apps",
+      live: "https://portfolio-2025-m45j.onrender.com",
+      github: "https://github.com/Galomer310",
+    },
+  },
 ];
 
 const TechShowcase: React.FC = () => {
