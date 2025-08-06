@@ -6,6 +6,19 @@ import CurrencyConverter from "../assets/Currency-Converter.png";
 import StorySharing from "../assets/StorySharing.png";
 import NightOut from "../assets/food&drinkCalc.png";
 import RobotScientist from "../assets/robotSci.png";
+// Near Me project screenshots
+import NearMeImg1 from "../assets/NearMe-1.png";
+import NearMeImg2 from "../assets/NearMe-2.png";
+import NearMeImg3 from "../assets/NearMe-3.png";
+import NearMeImg4 from "../assets/NearMe-4.png";
+import NearMeImg5 from "../assets/NearMe-5.png";
+import NearMeImg6 from "../assets/NearMe-6.png";
+import NearMeImg7 from "../assets/NearMe-7.png";
+import NearMeImg8 from "../assets/NearMe-8.png";
+import NearMeImg9 from "../assets/NearMe-9.png";
+import NearMeImg10 from "../assets/NearMe-10.png";
+import NearMeImg11 from "../assets/NearMe-11.png";
+import NearMeImg12 from "../assets/NearMe-12.png";
 
 // Recipe Finder project screenshot
 import RecipeFinder from "../assets/RecipeFinder.png";
@@ -200,6 +213,29 @@ const projects: Project[] = [
     github: "https://github.com/Galomer310/ManisR-frontend",
     live: "https://manisr.onrender.com",
     videoDemo: "https://youtu.be/xZTdfzBigZU",
+  },
+  {
+    name: "Near Me",
+    image: NearMeImg1,
+    images: [
+      NearMeImg1,
+      NearMeImg2,
+      NearMeImg3,
+      NearMeImg4,
+      NearMeImg5,
+      NearMeImg6,
+      NearMeImg7,
+      NearMeImg8,
+      NearMeImg9,
+      NearMeImg10,
+      NearMeImg11,
+      NearMeImg12,
+    ],
+    description:
+      "A multi-language web app to find the nearest gas stations, grocery stores, gyms, and more — anywhere in the world. Features a mobile-first, responsive UI, live map, business type selector, and navigation bar for fast results. Built with React, TypeScript, Google Maps API, and more.",
+    github: "https://github.com/Galomer310/Near-Me",
+    live: "https://galomer310.github.io/Near-Me/",
+    videoDemo: "https://youtu.be/QBBOSC56Hco",
   },
 ];
 
