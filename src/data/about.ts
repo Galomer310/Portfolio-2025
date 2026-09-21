@@ -18,8 +18,8 @@ export const about: Entry[] = [
       he: 'יצאתי מבוטקמפ אינטנסיבי והתחלתי לבנות דברים שאנשים יכולים באמת לפתוח. כל מה שבדף הזה הוא משהו שסיימתי, לא משהו שהתחלתי.',
     },
     facts: [
-      { k: 'FINISHED', v: { en: 'Twelve projects, all still reachable.', he: 'שנים-עשר פרויקטים, כולם עדיין נגישים.' } },
-      { k: 'IN PRODUCTION', v: { en: 'Three — municipal school transport, patient taxi coordination, and a client’s order management.', he: 'שלושה — הסעות עירוניות, תיאום מוניות למטופלים, וניהול הזמנות של לקוח.' } },
+      { k: 'FINISHED', v: { en: 'Thirteen projects, all still reachable.', he: 'שלושה-עשר פרויקטים, כולם עדיין נגישים.' } },
+      { k: 'IN PRODUCTION', v: { en: 'Four — municipal school transport, patient taxi coordination, the company’s BI, and a client’s order management.', he: 'ארבעה — הסעות עירוניות, תיאום מוניות למטופלים, ה-BI של החברה, וניהול הזמנות של לקוח.' } },
       { k: 'STILL BUILDING', v: { en: 'Two, and they are named as unfinished rather than dressed up.', he: 'שניים, והם מסומנים כלא-גמורים ולא מולבשים.' } },
     ],
   },
@@ -34,7 +34,7 @@ export const about: Entry[] = [
       he: 'אני מנהל את צד הפיתוח בא.קרן פסגות. שלושה אנשים כפופים לי — שני מתכנתים על מוצרים שונים, וסדרן שמתאם נסיעות מוניות למטופלי משרד הביטחון כל יום. לא הפסקתי לכתוב קוד בשביל זה.',
     },
     facts: [
-      { k: 'NOW', v: { en: 'Vice President, A. Keren Psagot — two production systems, a team of three, and the architecture is mine.', he: 'סמנכ״ל, א.קרן פסגות — שתי מערכות בייצור, צוות של שלושה, והארכיטקטורה שלי.' } },
+      { k: 'NOW', v: { en: 'Vice President, A. Keren Psagot — three production systems, a team of three, and the architecture is mine.', he: 'סמנכ״ל, א.קרן פסגות — שלוש מערכות בייצור, צוות של שלושה, והארכיטקטורה שלי.' } },
       { k: 'BEFORE', v: { en: 'Two full-stack internships: TLV Tech (Python, AWS, scraping at scale) and Asaf Media, where I built Manisr.', he: 'שתי התמחויות פול-סטאק: TLV Tech (פייתון, AWS, סריקה בקנה מידה) ואסף מדיה, שם בניתי את Manisr.' } },
       { k: 'LEARNED', v: { en: 'Leading did not mean writing less. It meant the parts I write are the ones nobody else can unpick later.', he: 'לנהל לא אומר לכתוב פחות. זה אומר שהחלקים שאני כותב הם אלה שאף אחד אחר לא יצליח לפרק אחר כך.' } },
     ],

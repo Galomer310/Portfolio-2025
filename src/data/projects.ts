@@ -85,6 +85,40 @@ export const projects: Entry[] = [
     ],
   },
   {
+    id: 'psagot-bi',
+    name: 'Psagot BI',
+    meta: 'A. Keren Psagot · internal financial reporting',
+    status: 'production',
+    buckets: ['running', 'all'],
+    summary: {
+      en: 'The internal business-intelligence system for A. Keren Psagot: one live financial picture of the whole business, broad enough to scan in a minute and deep enough to act on. Built so the management team decides forward — where the money sits, what it is doing, and what the next move should be.',
+      he: 'מערכת ה-BI הפנימית של א.קרן פסגות: תמונה פיננסית חיה אחת של כל העסק, רחבה מספיק לסריקה של דקה ועמוקה מספיק כדי לפעול לפיה. נבנתה כדי שההנהלה תחליט קדימה — איפה הכסף יושב, מה הוא עושה, ומה הצעד הבא.',
+    },
+    facts: [
+      {
+        k: 'WHY IT IS HARD',
+        v: {
+          en: 'A dashboard that is wrong once is never trusted again. The numbers have to reconcile against the source every time, not most of the time.',
+          he: 'דשבורד שטועה פעם אחת לא זוכה לאמון שוב. המספרים חייבים להתאים למקור כל פעם, לא ברוב הפעמים.',
+        },
+      },
+      {
+        k: 'WHAT I OWN',
+        v: {
+          en: 'Built it for my own management team, which means I hear about it the same day a number looks wrong.',
+          he: 'בניתי את זה לצוות ההנהלה שלי עצמי, כלומר אני שומע על זה באותו יום שמספר נראה לא נכון.',
+        },
+      },
+      {
+        k: 'EVIDENCE',
+        v: {
+          en: 'In use for real financial decisions, not a reporting exercise.',
+          he: 'בשימוש להחלטות כספיות אמיתיות, לא תרגיל דוחות.',
+        },
+      },
+    ],
+  },
+  {
     id: 'magani',
     name: 'Magani',
     meta: 'React · TypeScript · Node · Neon PostgreSQL · Drizzle · Cloudinary',

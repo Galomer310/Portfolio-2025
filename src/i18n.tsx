@@ -140,8 +140,8 @@ export const commands = [
 ];
 
 export const stats = [
-  { n: '12', k: { en: 'SHIPPED', he: 'פרויקטים' } },
-  { n: '3', k: { en: 'IN PRODUCTION', he: 'בייצור' } },
+  { n: '13', k: { en: 'SHIPPED', he: 'פרויקטים' } },
+  { n: '4', k: { en: 'IN PRODUCTION', he: 'בייצור' } },
   { n: '3', k: { en: 'PEOPLE I LEAD', he: 'אנשים בצוות שלי' } },
   { n: '221', k: { en: 'TEST ASSERTIONS', he: 'בדיקות' } },
 ];
