@@ -19,12 +19,12 @@ export const projects: Entry[] = [
   {
     id: 'kiryat-ata',
     name: 'Kiryat Ata Transport',
-    meta: 'A. Keren Psagot · Python optimiser · Fastify · PostgreSQL · TypeScript',
+    meta: 'A. Keren Psagot · Python optimiser · Fastify · PostgreSQL · TypeScript · Capacitor',
     status: 'production',
     buckets: ['running', 'all'],
     summary: {
-      en: 'A planning pipeline and a dispatch application running a real municipal operation: 461 children, 30 vehicles, 46 institutions, two directions a day. Drivers and escorts tap from the road; the dispatcher watches it happen live.',
-      he: 'צינור תכנון ואפליקציית מוקד שמריצים מערך עירוני אמיתי: 461 ילדים, 30 רכבים, 46 מוסדות, שני כיוונים ביום. נהגים ומלוות מסמנים מהכביש; המוקד רואה את זה קורה בזמן אמת.',
+      en: 'A planning pipeline and a dispatch system for a real municipal operation: 461 children, 30 vehicles, 46 institutions, two directions a day. Drivers and escorts work from an Android and iPhone app, parents get a private page that tells them when to step out, and the municipality sees every route without seeing a child’s details.',
+      he: 'צינור תכנון ומערכת מוקד למערך עירוני אמיתי: 461 ילדים, 30 רכבים, 46 מוסדות, שני כיוונים ביום. נהגים ומלוות עובדים מאפליקציה לאנדרואיד ולאייפון, הורים מקבלים דף פרטי שאומר להם מתי לצאת, והעירייה רואה כל מסלול בלי לראות פרטים של ילד.',
     },
     facts: [
       {
@@ -44,8 +44,8 @@ export const projects: Entry[] = [
       {
         k: 'EVIDENCE',
         v: {
-          en: '221 test assertions · 30 planning rules enforced and re-verified, 0 failing.',
-          he: '221 טענות בדיקה · 30 מגבלות תכנון נאכפות ונבדקות מחדש, 0 כשלים.',
+          en: '816 tests in 24 suites · every planning rule re-verified on every plan, 0 failing · the morning plan solves in 4 seconds instead of 57, and gives the same plan every run.',
+          he: '816 בדיקות ב-24 חבילות · כל מגבלת תכנון נבדקת מחדש על כל תוכנית, 0 כשלים · תכנון הבוקר נפתר ב-4 שניות במקום 57, ונותן אותה תוכנית בכל הרצה.',
         },
       },
     ],
@@ -105,15 +105,49 @@ export const projects: Entry[] = [
       {
         k: 'WHAT I OWN',
         v: {
-          en: 'Built it for my own management team, which means I hear about it the same day a number looks wrong.',
-          he: 'בניתי את זה לצוות ההנהלה שלי עצמי, כלומר אני שומע על זה באותו יום שמספר נראה לא נכון.',
+          en: 'I built it for our management team, so when a number looks wrong I hear about it the same day, and fix it.',
+          he: 'בניתי את זה לצוות ההנהלה שלנו, כך שכשמספר נראה לא נכון אני שומע על זה באותו יום, ומתקן.',
         },
       },
       {
         k: 'EVIDENCE',
         v: {
-          en: 'In use for real financial decisions, not a reporting exercise.',
-          he: 'בשימוש להחלטות כספיות אמיתיות, לא תרגיל דוחות.',
+          en: 'The management team uses it for real financial decisions.',
+          he: 'ההנהלה משתמשת בה להחלטות כספיות אמיתיות.',
+        },
+      },
+    ],
+  },
+  {
+    id: 'trip-intake',
+    name: 'Bus Trip Intake',
+    meta: 'A. Keren Psagot · Python · Flask · Claude API · WhatsApp Cloud API · Microsoft Graph',
+    status: 'production',
+    buckets: ['running', 'all'],
+    summary: {
+      en: 'How the bus department takes an order. A client writes by email or on WhatsApp; Claude reads the thread and its attachments into a draft; the client confirms on a form, signs the terms on screen, and the order leaves as an import file for the dispatch system.',
+      he: 'איך מחלקת האוטובוסים מקבלת הזמנה. לקוח כותב במייל או ב-WhatsApp; Claude קורא את השרשור והקבצים המצורפים לטיוטה; הלקוח מאשר בטופס, חותם על התנאים במסך, וההזמנה יוצאת כקובץ ייבוא למערכת הסידור.',
+    },
+    facts: [
+      {
+        k: 'WHY IT IS HARD',
+        v: {
+          en: 'A language model reading customer email must never be able to act on it. Claude only fills fields in a fixed schema; every value then passes the same validation as a human on the form, and nothing it writes can approve, price or send.',
+          he: 'מודל שפה שקורא מייל של לקוח לעולם לא אמור לפעול לפיו. Claude רק ממלא שדות בסכימה קבועה; כל ערך עובר את אותה ולידציה כמו אדם בטופס, ושום דבר שהוא כותב לא יכול לאשר, לתמחר או לשלוח.',
+        },
+      },
+      {
+        k: 'WHAT I OWN',
+        v: {
+          en: 'Built by a developer on my team, under my lead. I took over its development in November 2026.',
+          he: 'נבנה על ידי מתכנת בצוות שלי, בהובלתי. מנובמבר 2026 אני ממשיך את הפיתוח שלו בעצמי.',
+        },
+      },
+      {
+        k: 'EVIDENCE',
+        v: {
+          en: 'The department takes real orders through it · 320 tests, with a fake Claude and a fake mailbox so they run offline.',
+          he: 'המחלקה מקבלת דרכה הזמנות אמיתיות · 320 בדיקות, עם Claude מדומה ותיבת דואר מדומה כך שהן רצות בלי רשת.',
         },
       },
     ],
@@ -171,13 +205,51 @@ export const projects: Entry[] = [
         },
       },
       { k: 'WHAT I OWN', v: { en: 'Full stack — schema, API and UI.', he: 'פול-סטאק — סכימה, API וממשק.' } },
-      { k: 'CONTEXT', v: { en: 'Paid work, not a course exercise — built during my internship at Asaf Media, Feb–Apr 2025.', he: 'עבודה בתשלום, לא תרגיל קורס — נבנה במהלך ההתמחות באסף מדיה, פברואר–אפריל 2025.' } },
+      { k: 'CONTEXT', v: { en: 'Built during my internship at Asaf Media, Feb–Apr 2025. My first project for a real organisation.', he: 'נבנה במהלך ההתמחות באסף מדיה, פברואר–אפריל 2025. הפרויקט הראשון שלי עבור ארגון אמיתי.' } },
       { k: 'EVIDENCE', v: { en: 'Live, with a video walkthrough.', he: 'חי, עם סרטון הדגמה.' } },
     ],
     links: {
       live: 'https://manisr.onrender.com',
       code: 'https://github.com/Galomer310/ManisR-frontend',
       video: 'https://youtu.be/xZTdfzBigZU',
+    },
+  },
+  {
+    id: 'investments',
+    name: 'Investments',
+    meta: 'Formerly Stock Tracker · TypeScript · Express · Neon PostgreSQL · React · Redux',
+    status: 'live',
+    buckets: ['running', 'all'],
+    summary: {
+      en: 'A social investing game. Each player runs up to three virtual portfolios at real market prices, writes down why they made every trade, and is ranked, followed and measured against the S&P 500 and the Nasdaq. It began as my bootcamp final project and has been rebuilt since.',
+      he: 'משחק השקעות חברתי. כל שחקן מנהל עד שלושה תיקים וירטואליים במחירי שוק אמיתיים, כותב למה ביצע כל עסקה, ומדורג, נעקב ונמדד מול S&P 500 והנאסד״ק. התחיל כפרויקט הגמר שלי בבוטקמפ ונבנה מחדש מאז.',
+    },
+    facts: [
+      {
+        k: 'WHY IT IS HARD',
+        v: {
+          en: 'A fair return. Daily portfolio values are rebuilt from the trades themselves, and capital a player is given as a reward is kept out of the performance index, so nobody climbs the board by being topped up.',
+          he: 'תשואה הוגנת. ערכי התיק היומיים נבנים מחדש מהעסקאות עצמן, והון שהשחקן מקבל כפרס לא נכנס למדד הביצועים, כך שאף אחד לא מטפס בדירוג כי מילאו לו את הקופה.',
+        },
+      },
+      {
+        k: 'WHAT I OWN',
+        v: {
+          en: 'All of it: the product spec, the performance engine, the API and the app.',
+          he: 'הכל: אפיון המוצר, מנוע הביצועים, ה-API והאפליקציה.',
+        },
+      },
+      {
+        k: 'EVIDENCE',
+        v: {
+          en: '354 tests. Trades execute at the server’s own quote; any price a client sends is ignored.',
+          he: '354 בדיקות. עסקאות מתבצעות במחיר שהשרת עצמו מושך; מחיר שהלקוח שולח נזרק.',
+        },
+      },
+    ],
+    links: {
+      live: 'https://stocktrack-frontend-u3br.onrender.com',
+      code: 'https://github.com/Galomer310/StockTracker-backend',
     },
   },
   {
@@ -200,7 +272,7 @@ export const projects: Entry[] = [
       },
       {
         k: 'WHAT I OWN',
-        v: { en: 'All of it. It is the one here that is not JavaScript.', he: 'הכל. זה היחיד כאן שאינו JavaScript.' },
+        v: { en: 'All of it, in Python — where I learned web development outside JavaScript.', he: 'הכל, בפייתון — כאן למדתי פיתוח ווב מחוץ ל-JavaScript.' },
       },
       { k: 'EVIDENCE', v: { en: 'In use. Happy to walk through it.', he: 'בשימוש. אשמח להדגים.' } },
     ],
@@ -261,6 +333,40 @@ export const projects: Entry[] = [
     },
   },
   {
+    id: 'weekend-warrior',
+    name: 'Weekend Warrior',
+    meta: 'TypeScript · Express · Drizzle · PostgreSQL · React · three.js',
+    status: 'private',
+    buckets: ['all'],
+    summary: {
+      en: 'A private app for two off-road riders: the bikes, the gear, maintenance due by distance or by date, and the documents that go with them. It ends in a 3D garage where each rider’s bike and gear appear in their own colours.',
+      he: 'אפליקציה פרטית לשני רוכבי שטח: האופנועים, הציוד, טיפולים שמגיעים לפי קילומטרים או לפי תאריך, והמסמכים שהולכים איתם. בסוף יש מוסך תלת-ממדי שבו האופנוע והציוד של כל רוכב מופיעים בצבעים שלו.',
+    },
+    facts: [
+      {
+        k: 'WHY IT IS HARD',
+        v: {
+          en: 'Two users still deserve real security. Every uploaded file and VIN is encrypted with AES-256-GCM and bound to its own row, so a value copied to another record will not open; photos are re-encoded to strip their location.',
+          he: 'גם לשני משתמשים מגיעה אבטחה אמיתית. כל קובץ שעולה וכל מספר שלדה מוצפנים ב-AES-256-GCM וקשורים לשורה שלהם, כך שערך שמועתק לרשומה אחרת לא נפתח; תמונות מקודדות מחדש כדי להסיר מהן את המיקום.',
+        },
+      },
+      {
+        k: 'WHAT I OWN',
+        v: {
+          en: 'All of it, from the spec to the 3D garage.',
+          he: 'הכל, מהאפיון ועד המוסך התלת-ממדי.',
+        },
+      },
+      {
+        k: 'EVIDENCE',
+        v: {
+          en: 'Built and tested stage by stage, with database tests in CI. Private code — happy to walk through it.',
+          he: 'נבנה ונבדק שלב אחר שלב, עם בדיקות מסד ב-CI. קוד פרטי — אשמח להדגים.',
+        },
+      },
+    ],
+  },
+  {
     id: 'scrapers',
     name: 'Web Scrapers',
     meta: 'Python · Selenium · BeautifulSoup · BrightData · Docker · AWS',
@@ -274,34 +380,13 @@ export const projects: Entry[] = [
       {
         k: 'WHY IT IS HARD',
         v: {
-          en: 'Sites that change their markup specifically to stop you. A scraper is a maintenance commitment, not a script.',
-          he: 'אתרים שמשנים את ה-markup שלהם במיוחד כדי לעצור אותך. סורק הוא התחייבות לתחזוקה, לא סקריפט.',
+          en: 'Sites change their markup, sometimes specifically to block scrapers, so the work is as much maintenance as it is writing code.',
+          he: 'אתרים משנים את ה-markup שלהם, לפעמים במיוחד כדי לחסום סורקים, כך שהעבודה היא תחזוקה לא פחות משהיא כתיבת קוד.',
         },
       },
       { k: 'WHAT I OWN', v: { en: 'The scrapers, the proxy layer and the container.', he: 'הסורקים, שכבת הפרוקסי והקונטיינר.' } },
       { k: 'EVIDENCE', v: { en: 'Private — happy to walk through it.', he: 'פרטי — אשמח להדגים.' } },
     ],
-  },
-  {
-    id: 'stock-tracker',
-    name: 'Stock Tracker',
-    meta: 'React · Redux · Node · JWT',
-    status: 'live',
-    buckets: ['all'],
-    summary: {
-      en: 'Track the market and manage a watchlist. JWT auth, a REST API, and a UI that stays readable when the numbers move.',
-      he: 'מעקב אחרי השוק וניהול רשימת מעקב. אימות JWT, REST API, וממשק שנשאר קריא כשהמספרים זזים.',
-    },
-    facts: [
-      { k: 'WHY IT IS HARD', v: { en: 'Keeping a watchlist in sync across sessions.', he: 'לשמור רשימת מעקב מסונכרנת בין סשנים.' } },
-      { k: 'WHAT I OWN', v: { en: 'Full stack.', he: 'פול-סטאק.' } },
-      { k: 'EVIDENCE', v: { en: 'Live, with a video walkthrough.', he: 'חי, עם סרטון הדגמה.' } },
-    ],
-    links: {
-      live: 'https://stocktrack-frontend-u3br.onrender.com',
-      code: 'https://github.com/Galomer310/StockTrack-frontend',
-      video: 'https://www.youtube.com/watch?v=XTYVHmeUiLY',
-    },
   },
   {
     id: 'recipe-finder',
@@ -352,13 +437,13 @@ export const projects: Entry[] = [
     status: 'archive',
     buckets: ['all'],
     summary: {
-      en: 'Four smaller builds from the bootcamp period. They are kept because a portfolio that only shows the good years is not a record of anything.',
-      he: 'ארבעה פרויקטים קטנים יותר מתקופת הבוטקמפ. הם נשארים כאן כי פורטפוליו שמראה רק את השנים הטובות הוא לא תיעוד של כלום.',
+      en: 'Four smaller builds from my bootcamp. I keep them here because they are where I started.',
+      he: 'ארבעה פרויקטים קטנים מהבוטקמפ. אני משאיר אותם כאן כי מכאן התחלתי.',
     },
     facts: [
       {
         k: 'WHY THEY ARE HERE',
-        v: { en: 'They show the distance travelled, which is the point.', he: 'הם מראים את המרחק שנעשה, וזו הנקודה.' },
+        v: { en: 'They show where I started, and how much I have learned since.', he: 'הם מראים מאיפה התחלתי, וכמה למדתי מאז.' },
       },
       { k: 'WHAT I OWN', v: { en: 'All of them, solo.', he: 'את כולם, לבד.' } },
       { k: 'EVIDENCE', v: { en: 'All still reachable.', he: 'כולם עדיין נגישים.' } },

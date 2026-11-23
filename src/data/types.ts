@@ -19,6 +19,7 @@ export type Status =
   | 'production'   // running for someone who is not me
   | 'live'         // deployed and reachable
   | 'internship'   // real work, private code
+  | 'private'      // built and tested, for a closed circle, not public
   | 'daily'        // a technology I use constantly
   | 'often'        // a technology I reach for regularly
   | 'context'      // a line of biography
@@ -59,6 +60,7 @@ export const STATUS_LABEL: Record<Status, Bilingual> = {
   production: { en: 'IN PRODUCTION', he: 'בייצור' },
   live: { en: 'LIVE', he: 'חי' },
   internship: { en: 'INTERNSHIP', he: 'התמחות' },
+  private: { en: 'PRIVATE', he: 'פרטי' },
   daily: { en: 'DAILY', he: 'יומיומי' },
   often: { en: 'OFTEN', he: 'תדיר' },
   context: { en: 'CONTEXT', he: 'רקע' },
