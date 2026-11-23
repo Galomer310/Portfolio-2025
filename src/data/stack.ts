@@ -19,7 +19,7 @@ export const stack: Entry[] = [
       he: 'לא שורה ברשימה. כל פרויקט עדכני כאן מוקלד מקצה לקצה, והטיפוסים הם מה שמאפשר לשנות סכימה בלי לחפש מה נשבר.',
     },
     facts: [
-      { k: 'WHERE', v: { en: 'Kiryat Ata, Magani, Manisr, Near Me, Stock Tracker.', he: 'קרית אתא, מגני, Manisr, Near Me, Stock Tracker.' } },
+      { k: 'WHERE', v: { en: 'Kiryat Ata, Investments, Weekend Warrior, Magani, Manisr, Near Me.', he: 'קרית אתא, Investments, Weekend Warrior, מגני, Manisr, Near Me.' } },
       { k: 'HOW DEEP', v: { en: 'Shared domain types between an API and its client, so a rename is one edit.', he: 'טיפוסי דומיין משותפים בין API ללקוח, כך ששינוי שם הוא עריכה אחת.' } },
       { k: 'WHY', v: { en: 'A rename becomes a compile error, not a bug report from a user.', he: 'שינוי שם הופך לשגיאת קומפילציה, לא לדיווח באג ממשתמש.' } },
     ],
@@ -35,7 +35,7 @@ export const stack: Entry[] = [
       he: 'רוב העבודה כאן היא React. מה שמעניין אותי הוא מה שקורה אחרי הרינדור הראשון: מצב ששורד רענון, וממשק שנשאר כן כשהנתונים מאחרים.',
     },
     facts: [
-      { k: 'WHERE', v: { en: 'Manisr, Near Me, Magani, Stock Tracker, Recipe Finder.', he: 'Manisr, Near Me, מגני, Stock Tracker, Recipe Finder.' } },
+      { k: 'WHERE', v: { en: 'Kiryat Ata, Investments, Weekend Warrior, Magani, Manisr, Near Me.', he: 'קרית אתא, Investments, Weekend Warrior, מגני, Manisr, Near Me.' } },
       { k: 'THE EDGE CASE', v: { en: 'A driver’s screen that queues every tap in IndexedDB and flushes the lot as one request when signal returns.', he: 'מסך נהג ששומר כל לחיצה ב-IndexedDB ומשחרר את כולן כבקשה אחת כשהקליטה חוזרת.' } },
       { k: 'OPINION', v: { en: 'A loading state that lies is worse than a slow one that does not.', he: 'מצב טעינה שמשקר גרוע ממצב איטי שלא.' } },
     ],
@@ -51,7 +51,7 @@ export const stack: Entry[] = [
       he: 'REST APIs מאחורי כל פרויקט פול-סטאק כאן, עם אימות JWT, ובמקום שזה מצדיק את עצמו ולא כי זה אופנתי — סוקט.',
     },
     facts: [
-      { k: 'WHERE', v: { en: 'Manisr, Magani, Stock Tracker, Story Sharing; Fastify on Kiryat Ata.', he: 'Manisr, מגני, Stock Tracker, Story Sharing; Fastify בקרית אתא.' } },
+      { k: 'WHERE', v: { en: 'Investments, Weekend Warrior, Magani, Manisr; Fastify on Kiryat Ata.', he: 'Investments, Weekend Warrior, מגני, Manisr; Fastify בקרית אתא.' } },
       { k: 'THE EDGE CASE', v: { en: 'Real-time chat that survives a reconnect without losing a message or showing it twice.', he: 'צ׳אט בזמן אמת ששורד ניתוק בלי לאבד הודעה ובלי להציג אותה פעמיים.' } },
       { k: 'OPINION', v: { en: 'Layers that point one way — http to services to data — are what make any of it testable.', he: 'שכבות שמצביעות לכיוון אחד — http לשירותים לנתונים — הן מה שהופך את זה לניתן לבדיקה.' } },
     ],
@@ -67,8 +67,8 @@ export const stack: Entry[] = [
       he: 'סכימות שעיצבתי ולא ירשתי, עם מיגרציות שמוחלות בסדר ואילוצים שמסרבים לנתונים שגויים במסד ולא בטופס.',
     },
     facts: [
-      { k: 'WHERE', v: { en: 'Kiryat Ata, Magani (Neon + Drizzle), Manisr, Story Sharing.', he: 'קרית אתא, מגני (Neon + Drizzle), Manisr, Story Sharing.' } },
-      { k: 'HOW DEEP', v: { en: '11 ordered migrations on one system, each recorded and run exactly once.', he: '11 מיגרציות מסודרות במערכת אחת, כל אחת מתועדת ורצה בדיוק פעם אחת.' } },
+      { k: 'WHERE', v: { en: 'Kiryat Ata, Investments (Neon), Weekend Warrior and Magani (Neon + Drizzle), Manisr.', he: 'קרית אתא, Investments (Neon), Weekend Warrior ומגני (Neon + Drizzle), Manisr.' } },
+      { k: 'HOW DEEP', v: { en: '19 ordered migrations on one system, each recorded and run exactly once, automatically on deploy.', he: '19 מיגרציות מסודרות במערכת אחת, כל אחת מתועדת ורצה בדיוק פעם אחת, אוטומטית בפריסה.' } },
       { k: 'OPINION', v: { en: 'A CHECK constraint is cheaper than a bug report.', he: 'אילוץ CHECK זול יותר מדיווח באג.' } },
     ],
   },
@@ -95,11 +95,11 @@ export const stack: Entry[] = [
     status: 'often',
     buckets: ['stack'],
     summary: {
-      en: 'I write tests for the things that would hurt somebody if they broke, and I try to break my own test before I trust it. The transport system has 221 assertions and not one of them tests a getter.',
-      he: 'אני כותב בדיקות לדברים שיפגעו במישהו אם יישברו, ומנסה לשבור את הבדיקה שלי לפני שאני סומך עליה. במערכת ההסעות יש 221 טענות ואף אחת מהן לא בודקת getter.',
+      en: 'I write tests for the things that would hurt somebody if they broke, and I try to break my own test before I trust it. The transport system has 816 tests and not one of them tests a getter.',
+      he: 'אני כותב בדיקות לדברים שיפגעו במישהו אם יישברו, ומנסה לשבור את הבדיקה שלי לפני שאני סומך עליה. במערכת ההסעות יש 816 בדיקות ואף אחת מהן לא בודקת getter.',
     },
     facts: [
-      { k: 'WHERE', v: { en: 'Kiryat Ata — six suites, run with no database and no network.', he: 'קרית אתא — שש חבילות, רצות בלי מסד נתונים ובלי רשת.' } },
+      { k: 'WHERE', v: { en: 'Kiryat Ata — 816 tests in 24 suites, run with no database and no network. Investments — 354 with Vitest.', he: 'קרית אתא — 816 בדיקות ב-24 חבילות, רצות בלי מסד נתונים ובלי רשת. Investments — 354 ב-Vitest.' } },
       { k: 'WHAT IT CAUGHT', v: { en: 'A plan-cache bug that would have delayed a route change by five seconds on a live board.', he: 'באג מטמון שהיה מעכב שינוי מסלול בחמש שניות בלוח חי.' } },
       { k: 'OPINION', v: { en: 'A check that cries wolf is worse than no check — the next real breach reads like more of the same.', he: 'בדיקה שזועקת לשווא גרועה מאין בדיקה — ההפרה האמיתית הבאה נקראת כמו עוד אחת מאלה.' } },
     ],

@@ -74,7 +74,7 @@ export function useLang(): LangContextValue {
 /* ------------------------------------------------------------- the chrome --- */
 
 export const ui = {
-  status: { en: 'OPEN TO WORK · ISRAEL / REMOTE', he: 'פנוי למשרה · ישראל / מרחוק' },
+  status: { en: 'OPEN TO CONVERSATIONS · ISRAEL / REMOTE', he: 'פתוח לשיחה · ישראל / מרחוק' },
   tagline: {
     en: 'Full stack developer and engineering lead. I run a team of three on systems people depend on daily — and I still write the hard parts myself.',
     he: 'מפתח פול-סטאק ומוביל פיתוח. מנהל צוות של שלושה על מערכות שאנשים תלויים בהן כל יום — ועדיין כותב בעצמי את החלקים הקשים.',
@@ -140,8 +140,8 @@ export const commands = [
 ];
 
 export const stats = [
-  { n: '13', k: { en: 'SHIPPED', he: 'פרויקטים' } },
-  { n: '4', k: { en: 'IN PRODUCTION', he: 'בייצור' } },
+  { n: '14', k: { en: 'SHIPPED', he: 'פרויקטים' } },
+  { n: '5', k: { en: 'IN PRODUCTION', he: 'בייצור' } },
   { n: '3', k: { en: 'PEOPLE I LEAD', he: 'אנשים בצוות שלי' } },
-  { n: '221', k: { en: 'TEST ASSERTIONS', he: 'בדיקות' } },
+  { n: '816', k: { en: 'TESTS, ONE SYSTEM', he: 'בדיקות, מערכת אחת' } },
 ];

@@ -25,7 +25,7 @@
 
 ## ההגדרות המדויקות
 
-**New → Static Site**, מחברים את `Galomer310/Portfolio-2025`:
+**New → Static Site**, מחברים את `Galomer310/gal-omer-portfolio`:
 
 | שדה | ערך |
 |---|---|
@@ -98,7 +98,7 @@ Service ID מ-Email Services, Template ID מ-Email Templates, Public Key מ-Acco
 ## אחרי שזה עובד
 
 - **דומיין משלך** תחת Settings → Custom Domain. `galomer.dev` נראה אחרת
-  מ-`portfolio-2025-m45j.onrender.com` בקורות חיים, והתעודה חינם ואוטומטית
+  מ-`gal-omer-portfolio.onrender.com` בקורות חיים, והתעודה חינם ואוטומטית
 - אם השארת את השירות הישן — **מחק אותו**, כדי שלא יהיו שתי כתובות חיות
 
 ---

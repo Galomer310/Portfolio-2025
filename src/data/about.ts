@@ -18,8 +18,8 @@ export const about: Entry[] = [
       he: 'יצאתי מבוטקמפ אינטנסיבי והתחלתי לבנות דברים שאנשים יכולים באמת לפתוח. כל מה שבדף הזה הוא משהו שסיימתי, לא משהו שהתחלתי.',
     },
     facts: [
-      { k: 'FINISHED', v: { en: 'Thirteen projects, all still reachable.', he: 'שלושה-עשר פרויקטים, כולם עדיין נגישים.' } },
-      { k: 'IN PRODUCTION', v: { en: 'Four — municipal school transport, patient taxi coordination, the company’s BI, and a client’s order management.', he: 'ארבעה — הסעות עירוניות, תיאום מוניות למטופלים, ה-BI של החברה, וניהול הזמנות של לקוח.' } },
+      { k: 'FINISHED', v: { en: 'Fourteen projects, all still reachable.', he: 'ארבעה-עשר פרויקטים, כולם עדיין נגישים.' } },
+      { k: 'IN PRODUCTION', v: { en: 'Five — municipal school transport, patient taxi coordination, bus trip intake, the company’s BI, and a client’s order management.', he: 'חמישה — הסעות עירוניות, תיאום מוניות למטופלים, קליטת הזמנות אוטובוסים, ה-BI של החברה, וניהול הזמנות של לקוח.' } },
       { k: 'STILL BUILDING', v: { en: 'Two, and they are named as unfinished rather than dressed up.', he: 'שניים, והם מסומנים כלא-גמורים ולא מולבשים.' } },
     ],
   },
@@ -34,7 +34,7 @@ export const about: Entry[] = [
       he: 'אני מנהל את צד הפיתוח בא.קרן פסגות. שלושה אנשים כפופים לי — שני מתכנתים על מוצרים שונים, וסדרן שמתאם נסיעות מוניות למטופלי משרד הביטחון כל יום. לא הפסקתי לכתוב קוד בשביל זה.',
     },
     facts: [
-      { k: 'NOW', v: { en: 'Vice President, A. Keren Psagot — three production systems, a team of three, and the architecture is mine.', he: 'סמנכ״ל, א.קרן פסגות — שלוש מערכות בייצור, צוות של שלושה, והארכיטקטורה שלי.' } },
+      { k: 'NOW', v: { en: 'Vice President, A. Keren Psagot — four production systems, a team of three, and the architecture is mine.', he: 'סמנכ״ל, א.קרן פסגות — ארבע מערכות בייצור, צוות של שלושה, והארכיטקטורה שלי.' } },
       { k: 'BEFORE', v: { en: 'Two full-stack internships: TLV Tech (Python, AWS, scraping at scale) and Asaf Media, where I built Manisr.', he: 'שתי התמחויות פול-סטאק: TLV Tech (פייתון, AWS, סריקה בקנה מידה) ואסף מדיה, שם בניתי את Manisr.' } },
       { k: 'LEARNED', v: { en: 'Leading did not mean writing less. It meant the parts I write are the ones nobody else can unpick later.', he: 'לנהל לא אומר לכתוב פחות. זה אומר שהחלקים שאני כותב הם אלה שאף אחד אחר לא יצליח לפרק אחר כך.' } },
     ],
@@ -57,17 +57,17 @@ export const about: Entry[] = [
   },
   {
     id: 'looking-for',
-    name: 'What I am looking for',
-    meta: 'A team that ships, and will correct me',
+    name: 'What I am open to',
+    meta: 'Conversations, not a job search',
     status: 'context',
     buckets: ['whoami'],
     summary: {
-      en: 'A full-stack role on a team that ships. I want code review from people better than me, and problems where the right answer is not obvious from the start.',
-      he: 'תפקיד פול-סטאק בצוות שמשחרר גרסאות. אני רוצה code review מאנשים טובים ממני, ובעיות שבהן התשובה הנכונה לא מובנת מאליה מההתחלה.',
+      en: 'I am not looking to leave, but I am happy to talk: about a hard problem, a system that has to hold up for real people, or work where the right answer is not obvious from the start.',
+      he: 'אני לא מחפש לעזוב, אבל תמיד שמח לדבר: על בעיה קשה, על מערכת שצריכה להחזיק מעמד מול אנשים אמיתיים, או על עבודה שבה התשובה הנכונה לא מובנת מאליה מההתחלה.',
     },
     facts: [
       { k: 'WHERE', v: { en: 'Israel, or remote.', he: 'ישראל, או מרחוק.' } },
-      { k: 'STACK I WANT', v: { en: 'TypeScript and Node, or Python. Ideally both.', he: 'TypeScript ו-Node, או פייתון. עדיף שניהם.' } },
+      { k: 'STACK', v: { en: 'TypeScript and Node, and Python. Usually both in the same system.', he: 'TypeScript ו-Node, ופייתון. בדרך כלל שניהם באותה מערכת.' } },
       { k: 'CONTACT', v: { en: 'The form below, or LinkedIn.', he: 'הטופס למטה, או לינקדאין.' } },
     ],
   },
