@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <title>Gal Omer — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="cv.css" />
+</head>
+<body>
+  <header>
+    <h1>Gal Omer</h1>
+    <p class="role">Full Stack Developer · VP, A. Keren Psagot</p>
+    <p class="contact">
+      <span>Herzliya, Israel</span>
+      <span><a href="mailto:galomer6708@gmail.com">galomer6708@gmail.com</a></span>
+      <span>053-932-5296</span>
+      <span><a href="https://github.com/Galomer310">github.com/Galomer310</a></span>
+      <span><a href="https://www.linkedin.com/in/gal-omer/">linkedin.com/in/gal-omer</a></span>
+    </p>
+  </header>
+
+  <h2>Summary</h2>
+  <p class="summary">
+    Full-stack developer leading a team of three at A. Keren Psagot, where I build and run the systems
+    the company works with every day — municipal school transport, patient taxi coordination, bus trip
+    intake and internal reporting. I moved into software from chemistry through an intensive bootcamp in
+    2024, and I have grown by taking on real problems and staying close to the code. I want to keep
+    growing: harder problems, and people I can learn from.
+  </p>
+
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <p><span class="job-title">Vice President, Development</span> <span class="job-org">· A. Keren Psagot</span></p>
+      <p class="dates">Nov 2025 – Present</p>
+    </div>
+    <ul>
+      <li>Lead a team of three — two developers on separate products and a full-time dispatcher — while continuing to write code every day.</li>
+      <li><b>Kiryat Ata school transport:</b> planning and dispatch for 461 children, 30 vehicles and 46 institutions, twice a day. Python route optimiser (Clarke-Wright with 2-opt), Fastify/TypeScript API, PostgreSQL, and an Android and iPhone app for drivers, escorts and parents. 816 automated tests; morning plan solve time cut from 57 seconds to 4.
+        <div class="stack">Python · TypeScript · Fastify · React · PostgreSQL · Capacitor · Render</div></li>
+      <li><b>Shikum Psagot:</b> taxi coordination for Ministry of Defense rehabilitation patients, built together with one of my developers and used daily by our dispatcher.</li>
+      <li><b>Bus trip intake:</b> orders arriving by email or WhatsApp are read by the Claude API into validated drafts, confirmed and signed by the client, and exported to the dispatch system. Developed by a developer on my team under my lead; I took over development in November 2026.</li>
+      <li><b>Psagot BI</b> for management’s financial decisions, plus Python automation for monthly billing (pandas) and trip planning (Flask, PDF generation).</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <p><span class="job-title">Full Stack Developer Intern</span> <span class="job-org">· TLV Tech</span></p>
+      <p class="dates">May 2025 – Oct 2025</p>
+    </div>
+    <ul>
+      <li>Built web-scraping and data-extraction pipelines in Python (Selenium, BeautifulSoup, OpenAI API), running on AWS ECS with output to S3.</li>
+      <li>Handled data reconciliation and normalisation, and debugged anti-bot protections with BrightData proxy rotation and Docker.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <p><span class="job-title">Full Stack Developer Intern</span> <span class="job-org">· Asaf Media</span></p>
+      <p class="dates">Feb 2025 – Apr 2025</p>
+    </div>
+    <ul>
+      <li>Built <b>Manisr</b>, a food-sharing platform: authentication, meal uploads, reservations and live chat. React, Redux, TypeScript, Node.js, Express, PostgreSQL.</li>
+    </ul>
+  </div>
+
+  <h2>Selected projects</h2>
+  <ul>
+    <li><b>Magani</b> — order management for a handmade awards business: public gallery, request form and admin side. React, TypeScript, Node, Neon PostgreSQL, Drizzle, Cloudinary.</li>
+    <li><b>Investments</b> — a social investing game at real market prices, with a performance engine and index comparison. Began as my bootcamp final project; 354 tests.</li>
+    <li><b>Weekend Warrior</b> — a private app for off-road riders: maintenance tracking, encrypted documents (AES-256-GCM) and a three.js 3D garage.</li>
+  </ul>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Languages</dt><dd>TypeScript, JavaScript, Python, SQL</dd>
+    <dt>Front end</dt><dd>React, Redux, Vite, HTML/CSS, i18n and RTL, accessibility (WCAG)</dd>
+    <dt>Back end</dt><dd>Node.js, Express, Fastify, Flask, REST APIs, JWT, WebSockets</dd>
+    <dt>Data</dt><dd>PostgreSQL (Neon), Drizzle, SQLite, pandas</dd>
+    <dt>Infrastructure</dt><dd>Render, AWS (ECS, S3), Docker, GitHub Actions, Capacitor, Git</dd>
+    <dt>Integrations</dt><dd>Claude API, OpenAI API, WhatsApp Cloud API, Microsoft Graph, Google Maps</dd>
+  </dl>
+
+  <h2>Education</h2>
+  <div class="edu">
+    <p><b>Developers Institute</b> — Full-stack web development, graduated with honours</p>
+    <p class="dates">Jul 2024 – Feb 2025</p>
+  </div>
+  <div class="edu">
+    <p><b>The Open University of Israel</b> — Three years of coursework in Chemistry</p>
+    <p class="dates">2019 – 2023</p>
+  </div>
+</body>
+</html>

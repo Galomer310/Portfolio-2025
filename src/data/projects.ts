@@ -105,15 +105,15 @@ export const projects: Entry[] = [
       {
         k: 'WHAT I OWN',
         v: {
-          en: 'Built it for my own management team, which means I hear about it the same day a number looks wrong.',
-          he: 'בניתי את זה לצוות ההנהלה שלי עצמי, כלומר אני שומע על זה באותו יום שמספר נראה לא נכון.',
+          en: 'I built it for our management team, so when a number looks wrong I hear about it the same day, and fix it.',
+          he: 'בניתי את זה לצוות ההנהלה שלנו, כך שכשמספר נראה לא נכון אני שומע על זה באותו יום, ומתקן.',
         },
       },
       {
         k: 'EVIDENCE',
         v: {
-          en: 'In use for real financial decisions, not a reporting exercise.',
-          he: 'בשימוש להחלטות כספיות אמיתיות, לא תרגיל דוחות.',
+          en: 'The management team uses it for real financial decisions.',
+          he: 'ההנהלה משתמשת בה להחלטות כספיות אמיתיות.',
         },
       },
     ],
@@ -205,7 +205,7 @@ export const projects: Entry[] = [
         },
       },
       { k: 'WHAT I OWN', v: { en: 'Full stack — schema, API and UI.', he: 'פול-סטאק — סכימה, API וממשק.' } },
-      { k: 'CONTEXT', v: { en: 'Paid work, not a course exercise — built during my internship at Asaf Media, Feb–Apr 2025.', he: 'עבודה בתשלום, לא תרגיל קורס — נבנה במהלך ההתמחות באסף מדיה, פברואר–אפריל 2025.' } },
+      { k: 'CONTEXT', v: { en: 'Built during my internship at Asaf Media, Feb–Apr 2025. My first project for a real organisation.', he: 'נבנה במהלך ההתמחות באסף מדיה, פברואר–אפריל 2025. הפרויקט הראשון שלי עבור ארגון אמיתי.' } },
       { k: 'EVIDENCE', v: { en: 'Live, with a video walkthrough.', he: 'חי, עם סרטון הדגמה.' } },
     ],
     links: {
@@ -272,7 +272,7 @@ export const projects: Entry[] = [
       },
       {
         k: 'WHAT I OWN',
-        v: { en: 'All of it. It is the one here that is not JavaScript.', he: 'הכל. זה היחיד כאן שאינו JavaScript.' },
+        v: { en: 'All of it, in Python — where I learned web development outside JavaScript.', he: 'הכל, בפייתון — כאן למדתי פיתוח ווב מחוץ ל-JavaScript.' },
       },
       { k: 'EVIDENCE', v: { en: 'In use. Happy to walk through it.', he: 'בשימוש. אשמח להדגים.' } },
     ],
@@ -380,8 +380,8 @@ export const projects: Entry[] = [
       {
         k: 'WHY IT IS HARD',
         v: {
-          en: 'Sites that change their markup specifically to stop you. A scraper is a maintenance commitment, not a script.',
-          he: 'אתרים שמשנים את ה-markup שלהם במיוחד כדי לעצור אותך. סורק הוא התחייבות לתחזוקה, לא סקריפט.',
+          en: 'Sites change their markup, sometimes specifically to block scrapers, so the work is as much maintenance as it is writing code.',
+          he: 'אתרים משנים את ה-markup שלהם, לפעמים במיוחד כדי לחסום סורקים, כך שהעבודה היא תחזוקה לא פחות משהיא כתיבת קוד.',
         },
       },
       { k: 'WHAT I OWN', v: { en: 'The scrapers, the proxy layer and the container.', he: 'הסורקים, שכבת הפרוקסי והקונטיינר.' } },
@@ -437,13 +437,13 @@ export const projects: Entry[] = [
     status: 'archive',
     buckets: ['all'],
     summary: {
-      en: 'Four smaller builds from the bootcamp period. They are kept because a portfolio that only shows the good years is not a record of anything.',
-      he: 'ארבעה פרויקטים קטנים יותר מתקופת הבוטקמפ. הם נשארים כאן כי פורטפוליו שמראה רק את השנים הטובות הוא לא תיעוד של כלום.',
+      en: 'Four smaller builds from my bootcamp. I keep them here because they are where I started.',
+      he: 'ארבעה פרויקטים קטנים מהבוטקמפ. אני משאיר אותם כאן כי מכאן התחלתי.',
     },
     facts: [
       {
         k: 'WHY THEY ARE HERE',
-        v: { en: 'They show the distance travelled, which is the point.', he: 'הם מראים את המרחק שנעשה, וזו הנקודה.' },
+        v: { en: 'They show where I started, and how much I have learned since.', he: 'הם מראים מאיפה התחלתי, וכמה למדתי מאז.' },
       },
       { k: 'WHAT I OWN', v: { en: 'All of them, solo.', he: 'את כולם, לבד.' } },
       { k: 'EVIDENCE', v: { en: 'All still reachable.', he: 'כולם עדיין נגישים.' } },

@@ -14,8 +14,12 @@
  */
 import React, { useEffect, useRef } from 'react';
 import { ui, useLang } from '../i18n';
-import resumeImage from '../assets/resume.png';
-import resumePDF from '../assets/resume.pdf';
+/* Rendered from cv/cv.en.html and cv/cv.he.html by `node cv/render.mjs`.
+   Edit the HTML, not these files. */
+import resumeImageEn from '../assets/resume.png';
+import resumePdfEn from '../assets/resume.pdf';
+import resumeImageHe from '../assets/resume-he.png';
+import resumePdfHe from '../assets/resume-he.pdf';
 
 interface Props {
   onClose: () => void;
@@ -63,6 +67,10 @@ const Resume: React.FC<Props> = ({ onClose }) => {
     };
   }, [onClose]);
 
+  /* The CV follows the site's language: each is its own document, not a mirror. */
+  const resumeImage = lang === 'he' ? resumeImageHe : resumeImageEn;
+  const resumePDF = lang === 'he' ? resumePdfHe : resumePdfEn;
+
   return (
     <div className="resume-overlay">
       <button type="button" className="scrim" aria-label={t(ui.close)} onClick={onClose} />
@@ -100,9 +108,7 @@ const Resume: React.FC<Props> = ({ onClose }) => {
         </div>
 
         <div className="resume-scroll">
-          {/* The CV itself is an English document, so it is not mirrored in
-              Hebrew — only the chrome around it is. */}
-          <img src={resumeImage} alt={t(ui.cvAlt)} className="resume-image" dir="ltr" />
+          <img src={resumeImage} alt={t(ui.cvAlt)} className="resume-image" />
         </div>
       </div>
     </div>

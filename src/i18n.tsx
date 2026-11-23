@@ -76,8 +76,8 @@ export function useLang(): LangContextValue {
 export const ui = {
   status: { en: 'OPEN TO CONVERSATIONS · ISRAEL / REMOTE', he: 'פתוח לשיחה · ישראל / מרחוק' },
   tagline: {
-    en: 'Full stack developer and engineering lead. I run a team of three on systems people depend on daily — and I still write the hard parts myself.',
-    he: 'מפתח פול-סטאק ומוביל פיתוח. מנהל צוות של שלושה על מערכות שאנשים תלויים בהן כל יום — ועדיין כותב בעצמי את החלקים הקשים.',
+    en: 'Full stack developer and engineering lead. I lead a small team building systems people rely on every day, and I write code alongside them.',
+    he: 'מפתח פול-סטאק ומוביל פיתוח. מוביל צוות קטן שבונה מערכות שאנשים נשענים עליהן כל יום, וכותב קוד לצד הצוות.',
   },
   layerTwo: { en: 'LAYER 2 — DEPTH', he: 'שכבה 2 — עומק' },
   readCase: { en: 'Read the full case', he: 'לקריאת המקרה המלא' },
@@ -94,8 +94,8 @@ export const ui = {
   },
   contactTitle: { en: 'Get in touch', he: 'יצירת קשר' },
   contactLead: {
-    en: 'The fastest way to reach me. I answer everything.',
-    he: 'הדרך המהירה ביותר להשיג אותי. אני עונה על הכל.',
+    en: 'The best way to reach me. I reply to every message.',
+    he: 'הדרך הטובה ביותר להשיג אותי. אני עונה לכל הודעה.',
   },
   yourName: { en: 'Your name', he: 'השם שלך' },
   yourEmail: { en: 'Your email', he: 'האימייל שלך' },
@@ -120,22 +120,22 @@ export const commands = [
   {
     id: 'running' as const,
     label: 'ls --running',
-    result: { en: 'WHAT IS ACTUALLY RUNNING', he: 'מה באמת רץ עכשיו' },
+    result: { en: 'WHAT IS RUNNING TODAY', he: 'מה רץ היום' },
   },
   {
     id: 'all' as const,
     label: 'ls --all',
-    result: { en: 'EVERYTHING, INCLUDING THE EARLY ONES', he: 'הכל, כולל המוקדמים' },
+    result: { en: 'EVERYTHING, INCLUDING WHERE I STARTED', he: 'הכל, כולל מאיפה שהתחלתי' },
   },
   {
     id: 'stack' as const,
     label: 'stack',
-    result: { en: 'NOT A LIST — WHERE EACH ONE WAS ACTUALLY USED', he: 'לא רשימה — איפה כל אחד באמת שימש' },
+    result: { en: 'EACH TECHNOLOGY, AND WHERE I USED IT', he: 'כל טכנולוגיה, ואיפה השתמשתי בה' },
   },
   {
     id: 'whoami' as const,
     label: 'whoami',
-    result: { en: 'THE SHORT VERSION, IN FOUR LINES', he: 'הגרסה הקצרה, בארבע שורות' },
+    result: { en: 'A LITTLE ABOUT ME, IN FOUR LINES', he: 'קצת עליי, בארבע שורות' },
   },
 ];
 

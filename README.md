@@ -24,6 +24,10 @@ evidence. On a phone that layer is a bottom sheet.
 - `src/data/stack.ts`, `src/data/about.ts` — the `stack` and `whoami` lists.
 - `src/i18n.tsx` — interface text and the stats strip. The stats are typed by
   hand: when a project's numbers change, update them here too.
+- `cv/` — the CV in English and Hebrew, as HTML. `node cv/render.mjs` turns
+  them into the PDF and preview image in `src/assets` (needs Microsoft Edge).
+  Edit the HTML, never the PDF. The script refuses to write while a source
+  still has a highlighted placeholder.
 - `docs/DESIGN.md` — the design direction and why each decision was made.
 - `DEPLOY.md` — how to deploy it to Render as a Static Site.
 
